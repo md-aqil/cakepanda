@@ -1,0 +1,14 @@
+{
+  "locofyConfig": {
+    "project_name": "cake",
+    "id": "6554c7d2934c31a8b0b286b2",
+    "framework": "html-css",
+    "typescript": false,
+    "path": "public/",
+    "componentsPath": "c:\\Users\\Admin\\Documents\\cake2\\src\\components",
+    "screensPath": "c:\\Users\\Admin\\Documents\\cake2\\src\\pages",
+    "styling": "CSS",
+    "unit": "px",
+    "naming": "Kebab Case"
+  }
+}

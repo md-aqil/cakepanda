@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-bai-jamjuree: "Bai Jamjuree";
+  --font-shojumaru: Shojumaru;
+  --font-raleway: Raleway;
+
+  /* font sizes */
+  --font-size-sm: 14px;
+  --font-size-13xl: 32px;
+  --font-size-5xl: 24px;
+  --font-size-lgi-5: 19.5px;
+  --font-size-61xl: 80px;
+  --font-size-3xs-8: 9.8px;
+  --font-size-base-8: 16.8px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-gray-100: rgba(255, 255, 255, 0.7);
+  --color-gray-200: rgba(255, 255, 255, 0.2);
+  --color-darkslategray: #353535;
+  --color-darkolivegreen-100: #2e5e2e;
+  --color-gold: #efd912;
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-5xs: 8px;
+  --gap-9xs: 4px;
+  --gap-xs-2: 11.2px;
+  --gap-sm: 14px;
+  --gap-7xs-6: 5.6px;
+
+  /* Paddings */
+  --padding-5xs: 8px;
+  --padding-base: 16px;
+  --padding-xs-2: 11.2px;
+  --padding-3xl-3: 22.3px;
+
+  /* border radiuses */
+  --br-11xl: 30px;
+  --br-9xs: 4px;
+  --br-31xl: 50px;
+  --br-7xs-6: 5.6px;
+  --br-81xl: 100px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
