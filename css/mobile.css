@@ -14,7 +14,7 @@
     }
 
     .community-marketplace {
-        line-height: 30px;
+        line-height: 1;
     }
     .seven span {
         font-size: 35px;
@@ -67,6 +67,7 @@
     }
     .second-content {
         background-size: cover;
+        background-position: 0 45px;
         margin-top: 100px;
     }
     .frame-parent {
@@ -102,4 +103,13 @@
         float: left;
         width: 80%;
     }
+
+    
+.show-mobile {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+  }
 }
