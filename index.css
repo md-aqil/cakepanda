@@ -415,10 +415,7 @@
   height: 49.2px;
   display: none;
 }
-.cake-panda {
-  position: absolute;
-  left: calc(50% - 150px);
-}
+
 .launch-app {
   position: relative;
 }
@@ -430,14 +427,10 @@
   flex-shrink: 0;
 }
 .launch-app-parent {
-  position: absolute;
-  top: calc(50% - 17px);
-  right: 0px;
   border-radius: var(--br-9xs);
   background: linear-gradient(180deg, #059825, #006e1f);
   border: 1px solid var(--color-white);
   box-sizing: border-box;
-  height: 34px;
   display: flex;
   flex-direction: row;
   padding: var(--padding-5xs) var(--padding-base);
@@ -446,9 +439,6 @@
   gap: var(--gap-5xs);
 }
 .panda-thunder-parent {
-  position: absolute;
-  top: calc(50% - 17.5px);
-  right: 169px;
   border-radius: var(--br-9xs);
   background: linear-gradient(180deg, #059886, #0033e8);
   border: 1px solid var(--color-white);
@@ -547,6 +537,7 @@
   height: 49.2px;
   text-align: right;
   font-size: var(--font-size-sm);
+  z-index: 1000;
 }
 .cake-film {
   position: relative;
@@ -982,4 +973,43 @@ mt-5 {
   width: 929.7px;
   height: 781.3px;
   z-index: 200  !important;
+}
+
+.cake-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cake-navbar ul{
+  border-radius: var(--br-31xl);
+  background-color: var(--color-darkolivegreen-100);
+  padding: 8px 15px;
+}
+.cake-navbar ul {
+ 
+  margin: 0;
+  list-style: none;
+  text-align: left;
+  display: flex;
+}
+.cake-navbar ul li a {
+  font-family: var(--font-bai-jamjuree);
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 15px;
+  display: block;
+  border-radius: 40px;
+  transition: all .3s;
+  font-size: 14px;
+ white-space: nowrap;
+}
+
+.cake-navbar ul li a:hover {
+  background: #ffffff6b;
+}
+
+.button-nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
