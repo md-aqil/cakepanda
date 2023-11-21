@@ -552,7 +552,7 @@
 
 .btn-theme {
   border-radius: 5.583px;
-  border: 1.396px solid #000;
+  border: 1px solid #000;
   background: #EFD912;
   box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.25);
   position: relative;
@@ -560,6 +560,9 @@
   line-height: 1;
   align-items: center;
   display: inline-flex;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
 
 }
 
@@ -1024,4 +1027,144 @@ mt-5 {
 .a-hyper-deflationary-and-container {
 
   font-family: 'Bai Jamjuree';
+}
+
+.rh{
+  border-radius: 10px;
+border: 2px solid #EFD912;
+background: #2E5E2E;
+display: inline-block;
+padding: 40px 80px;
+color: #FFF;
+font-family: Shojumaru;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.bg-theme {
+  background: #285028;
+
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+.meme-box {
+  background: #000;
+  width: 65%;
+  color: #fff;
+  padding: 15px;
+  margin: auto;
+}
+.meme-box p{
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 15px;;
+
+}
+.spacer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.meme-box iframe {
+  width: 100%;
+  margin: auto;
+}
+.text-center {
+  text-align: center !important; 
+}
+.fade-top {
+  position: relative;
+}
+.fade-top:before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(359deg, rgb(40, 80, 40), rgb(71 86 22 / 46%));
+  position: absolute;
+  left: 0;
+  top: -92px;
+}
+.para {
+  color: #fff;
+  line-height: 1.5;
+}
+.the-title {
+font-family: Shojumaru;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+letter-spacing: 3.36px;
+}
+.text-white {
+  color: #fff;
+  margin-top: 0;
+}
+.spacer-top {
+  padding-top: 80px;
+}
+
+.spacer-bottom {
+  padding-bottom: 80px;
+}
+
+.curve-bg {
+  width: 100%;
+    background: #285028;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 900px;
+}
+.por {
+  position: relative;
+}
+.stats-bg {
+  margin: auto;
+    width: 100%;
+    background: #285028;
+}
+.stats-content{
+  position: absolute;
+    top: 250px;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.stats-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.stats-content ul li{
+  color: #FFF;
+font-family: Bai Jamjuree;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 2.4px;
+text-align: left !important;
+padding-top: 15px;
+padding-bottom: 15px;
+}
+
+.stats-content ul li span{
+  color: #285028;
+  font-family: Bai Jamjuree;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  display: block;
 }

@@ -213,7 +213,115 @@
         </div>
       </div>
     </div>
+   <div class="bg-theme fade-top">
+
+ 
+    <section class="memes-section  spacer">
+      <div class="container">
+
+        <div class="flex-box" style="align-items: flex-end;">
+          <div class="flex-col text-center lm parallax"  data-speed="0.05">
+            <div class="meme-box">
+              <p>
+                when you finally find something 
+to eat after searching the kitchen for ages
+              </p>
+              <iframe src="https://giphy.com/embed/10HH4ySgNKCzVm" width="480" height="230" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            </div>
+            <h4 class="rh">
+              lethal memes
+            </h4>
+          </div>
+          <div class="flex-col text-center parallax"  data-speed="0.10" style="width: 50%;">
+           
+             <img style="width: 70%;" src="./public/lifetimeearning.png" alt="">
+            <h4 class="rh">
+              lifetime earning            
+            </h4>
+          </div>
+
+         
+
+        </div>
+        <div class="parallax" data-speed="0.05">
+          <p class="para">
+            CAKE PANDA is here to show the extreme power of memes in human life. Even Elon Musk rides on memes to connect with millions of followers. PANDA is the biggest MemeFi token (Meme + DeFi) in the world because dogs and cats are over now. Welcome to PANDAland.
+          </p>
+          <p class="para">
+            To give you some fun along the way, you’ll find On-Chain Games, Play2Earn NFTs, and other rewarding features that let you earn in the world’s first truly sustainable DeFi ecosystem while making the protocol work for you. CAPA will take over all other meme tokens in the market.
+          </p>
+
+        </div>
+       
+
+      </div>
+        
+    </section>
+
+    <section class="memes-section  spacer-bottom">
+      <div class="container text-center">
+          <h2 class="text-white the-title">
+            EXPLAINER 
+            VIDEO
+          </h2>
+          <img src="./public/explainer-banner.png" alt="">
+        </div>
+        </section>
+    </div>
    
+    <section class="stats-section por text-center">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" class="curve-bg" viewBox="0 0 1440 830" fill="none">
+        <path d="M0 0.854492C0 0.854492 431.073 77.7374 710 78.5642C996.692 79.414 1440 0.854492 1440 0.854492V787.172C1440 787.172 1007.14 830.483 721.423 829.946C443.494 829.424 0 787.172 0 787.172V0.854492Z" fill="white"/>
+      </svg> -->
+      <img src="./public/stat1.svg" class="stats-bg" alt="">
+      <div class="stats-content">
+        <ul>
+          <li>
+              <span>Price</span>
+              $ 0.00018
+          </li>
+          <li>
+            <span>Circulation</span>
+            9,106,738,988
+        </li>
+        <li>
+          <span>Liquidity</span>
+          $ 33,244.81
+      </li>
+        </ul>
+        <img src="./public/panda-pose.png" alt="">
+        <ul>
+          <li>
+              <span>Market Cap</span>
+              $ 1,644,416.34
+          </li>
+          <li>
+            <span>Holders</span>
+            13,366
+        </li>
+        <li>
+          <span>Burned</span>
+          893,261,012.39
+      </li>
+        </ul>
+
+    </div>
+    </section>
+
+
+    <section class="stats-section por text-center bg-theme spacer" style="margin-top: -5px;">
+      <div class="container">
+        <h2 class="text-white the-title">
+          HOW TO BUY
+        </h2>
+        <img src="./public/how-to-buy.svg" alt="">
+        <p class="para mt-3">
+          Use Flooz.Trade to get MONSTA via Apple Pay, GPay or your Credit Card!
+        </p>
+        <button class="btn-theme">OPEN FLOOZ.TRADE</button>
+      </div>
+    </section>
+
 
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -287,7 +395,7 @@ document.addEventListener("DOMContentLoaded", function () {
       
       scrub: 1,
       // markers: true, 
-      snap:true
+      // snap:true
      
     },
   });
@@ -302,6 +410,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+gsap.to(".parallax", {
+  scrollTrigger: {
+    scrub: true
+  }, 
+  y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+  ease: "none"
+});
 
 
 </script>
