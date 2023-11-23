@@ -883,8 +883,9 @@
   align-items: flex-start  !important;
 
 }
-mt-5 {
-  margin-top: 50px;
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 .mt-1 {
@@ -1167,4 +1168,21 @@ padding-bottom: 15px;
   line-height: normal;
   letter-spacing: 1.44px;
   display: block;
+}
+
+.whylist {
+  padding-left: 15px;
+  
+}
+
+.whylist li {
+  color: #fff;
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+}
+
+.whyimg {
+  width: 80%;
 }
