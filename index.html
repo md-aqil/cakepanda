@@ -22,6 +22,14 @@
     />
   </head>
   <body>
+    <canvas id="particleCanvas" style="position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh !important;"></canvas>
+
     <div class="cake-film">
       <div class="transparent-kung-fu-panda-png-group panda1-box" style="position: 1; z-index: 1;">
         <dotlottie-player src="https://lottie.host/bc38e264-3056-4988-a251-4d7eebafa962/BAWwz3udtu.json" background="transparent" speed="1" class="panda-1" loop autoplay></dotlottie-player>
@@ -332,7 +340,7 @@ to eat after searching the kitchen for ages
       </div>
     </section>
 
-    <section class="stats-section por text-center bg-theme spacer">
+    <section class="stats-section por text-center bg-theme spacer index1">
      
         <h2 class="text-white the-title">
           VISION
@@ -489,7 +497,7 @@ to eat after searching the kitchen for ages
       </div>
     </section>
 
-    <footer>
+    <footer class="index1">
       <div class="container">
         <div class="footer-list">
           <img src="./public/footer-panda.png" alt="">
@@ -596,7 +604,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add animations to the timeline
   timeline.to(".panda1-box", {
-    y: "1000px", // Move the object along the x-axis
+    y: "950px", // Move the object along the x-axis
     x: "-15%",
     //    duration: 500,
     // ease: "none",
