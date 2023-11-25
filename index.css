@@ -54,14 +54,12 @@
   width: 389.5px;
 }
 .vector-group {
-  /* position: absolute; */
-  top: 186.5px;
-  left: 34.7px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-sm);
+  color: #fff;
 }
 .div {
   position: absolute;
@@ -542,7 +540,7 @@
   position: relative;
   background-color: var(--color-white);
   width: 100%;
-  height: 1616px;
+  height: 100vh;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-5xl);
@@ -582,7 +580,7 @@
 .store-bg {
   opacity: .5;
   margin: auto;
-  width: 90%;
+  width: 100%;
   object-fit: contain;
   /* mix-blend-mode: luminosity; */
 
@@ -860,8 +858,9 @@
   background: url(./public/green-bg2.png) center no-repeat;
   height: 100%;
   background-size: 100%;
-  background-position: 0 150px;
+  background-position: top center;
   background-attachment: scroll;
+  top: 113px;
 }
 
 .hero-container {
@@ -881,6 +880,7 @@
 }
 .hero-left {
   align-items: flex-start  !important;
+  width: 60%;
 
 }
 
@@ -971,10 +971,8 @@
 
 .transparent-kung-fu-panda-png-group {
   position: absolute;
-  top: 0px;
-  left: 45%;
-  width: 929.7px;
-  height: 781.3px;
+  top: 100px;
+ right: 100px;
   z-index: 200  !important;
 }
 
@@ -1056,6 +1054,9 @@ line-height: normal;
   display: flex;
   justify-content: space-between;
 }
+.flex-box .flex-col {
+  width: 50%;
+}
 .meme-box {
   background: #000;
   width: 65%;
@@ -1087,10 +1088,10 @@ line-height: normal;
   content: "";
   width: 100%;
   height: 100px;
-  background: linear-gradient(359deg, rgb(40, 80, 40), rgb(71 86 22 / 46%));
+  background: linear-gradient(359deg, rgb(40, 80, 40), rgb(71 86 22 / 86%));
   position: absolute;
   left: 0;
-  top: -92px;
+  top: -42px;
 }
 .para {
   color: #fff;
@@ -1226,4 +1227,14 @@ padding-bottom: 15px;
 .index1 {
   position: relative;
   z-index: 1;
+}
+.capa-section {
+
+  width: 100%;
+  background: url(./public/green-bg2.png) center no-repeat;
+  height: 100%;
+  background-size: 100%;
+  background-position: 0 0;
+  /* background-attachment: scroll; */
+
 }
