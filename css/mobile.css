@@ -187,4 +187,26 @@
 .the-title {
     word-break: break-word;
 }
+.stat-panda {
+    width: 100%;
+}
+
+.stats-section  {
+    background: none !important;
+}
+
+.stats-content ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.stats-content ul li {
+    word-break: break-all;
+}
+
+.store-bg {
+    display: none;
+}
+
 }

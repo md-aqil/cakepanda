@@ -296,7 +296,7 @@ to eat after searching the kitchen for ages
     </div>
    
     <section class="stats-section por text-center spacer">
-    <div class="container spacer">
+    <div class="container spacer mt-6">
       <div class="double-box">
         <h4 class="float-label">STATS</h4>
         <div class="stats-content">
@@ -314,7 +314,7 @@ to eat after searching the kitchen for ages
             to be added
         </li>
           </ul>
-          <img class="stat-panda" src="./public/panda-green.png" alt="">
+          <img class="stat-panda panda-anim" src="./public/panda-green.png" alt="">
           <ul>
             <li>
                 <span>Market Cap</span>
@@ -357,7 +357,7 @@ to eat after searching the kitchen for ages
       </div>
     </section> -->
 
-    <section class="stats-section por text-center bg-theme spacer index1">
+    <section class="por text-center bg-theme spacer index1">
      
         <h2 class="text-white the-title">
           VISION
@@ -620,7 +620,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Add animations to the timeline
   timeline.to(".panda1-box", {
-    y: "950px", // Move the object along the x-axis
+    y: "900px", // Move the object along the x-axis
     x: "-15%",
     //    duration: 500,
     // ease: "none",
@@ -637,7 +637,7 @@ gsap.to(".parallax", {
   ease: "none"
 });
 
-gsap.fromTo(".panda1-box", { y: "40", x: "40px", }, { y: "-40px", x: "-40", scale: 1, duration: 1, repeat: -1,yoyo:true, ease: "none" });
+// gsap.fromTo(".panda1-box", { y: "40", x: "40px", }, { y: "-40px", x: "-40", scale: 1, duration: 1, repeat: -1,yoyo:true, ease: "none" });
 
 
 </script>
