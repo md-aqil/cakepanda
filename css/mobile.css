@@ -139,6 +139,8 @@
 
 .stats-content {
     flex-direction: column;
+    width: 85%;
+    padding: 30px;
 }
 
 .footer-list {
@@ -208,5 +210,61 @@
 .store-bg {
     display: none;
 }
+.stat-panda {
+    order: 1;
+    width: 75%;
+    left: -50px;
+    bottom: -30px;
+}
+.stats-content ul li {
+    font-size: 26px;
+}
 
+.lbt {
+    width: 85% !important;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.stats-section {
+    padding: 0;
+}
+.transparent-kung-fu-panda-png-group {
+    width: 100%;
+}
+.panda-1 {
+    width: 330px !important;
+}
+.capa-section .flex-box {
+    position: relative;
+    z-index: 1;
+}
+.meme-box {
+    width: 90%;
+}
+#particleCanvas {
+    width: 100%;
+}
+.hero-left {
+    align-items: flex-start !important;
+    width: 90%;
+}
+.double-box {
+    transform: rotate(0deg);
+}
+
+
+.double-box:after {
+    content: "";
+  
+    left: 5px;
+    top: 6px;
+    z-index: -1;
+    border: 5px solid #285028;
+    transform: none;
+}
+.stats-section {
+    overflow: hidden;
+}
 }

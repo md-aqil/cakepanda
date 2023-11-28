@@ -1392,3 +1392,6 @@ letter-spacing: 0;
 
   font-weight: bold;
 }
+.label-box b {
+  display: block;
+}
