@@ -258,7 +258,7 @@ to eat after searching the kitchen for ages
               lethal memes
             </h4>
           </div>
-          <div class="flex-col text-center" style="width: 50%;">
+          <div class="flex-col text-center">
            
              <img style="width: 70%;" src="./public/lifetimeearning.png" alt="">
             <h4 class="rh">
@@ -290,48 +290,53 @@ to eat after searching the kitchen for ages
             EXPLAINER 
             VIDEO
           </h2>
-          <img src="./public/explainer-banner.png" alt="">
+          <img class="width100" src="./public/explainer-banner.png" alt="">
         </div>
         </section>
     </div>
    
-    <section class="stats-section por text-center">
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" class="curve-bg" viewBox="0 0 1440 830" fill="none">
-        <path d="M0 0.854492C0 0.854492 431.073 77.7374 710 78.5642C996.692 79.414 1440 0.854492 1440 0.854492V787.172C1440 787.172 1007.14 830.483 721.423 829.946C443.494 829.424 0 787.172 0 787.172V0.854492Z" fill="white"/>
-      </svg> -->
-      <img src="./public/stat1.svg" class="stats-bg" alt="">
-      <div class="stats-content">
-        <ul>
-          <li>
-              <span>Price</span>
-              $ 0.00018
+    <section class="stats-section por text-center spacer">
+    <div class="container spacer">
+      <div class="double-box">
+        <h4 class="float-label">STATS</h4>
+        <div class="stats-content">
+          <ul>
+            <li>
+                <span>Price</span>
+                $ 0.00018
+            </li>
+            <li>
+              <span>Circulation</span>
+              9,106,738,988
           </li>
           <li>
-            <span>Circulation</span>
-            9,106,738,988
+            <span>Liquidity</span>
+            $ 33,244.81
         </li>
-        <li>
-          <span>Liquidity</span>
-          $ 33,244.81
-      </li>
-        </ul>
-        <img src="./public/panda-pose.png" alt="">
-        <ul>
-          <li>
-              <span>Market Cap</span>
-              $ 1,644,416.34
+          </ul>
+          <img class="stat-panda" src="./public/panda-pose.png" alt="">
+          <ul>
+            <li>
+                <span>Market Cap</span>
+                $ 1,644,416.34
+            </li>
+            <li>
+              <span>Holders</span>
+              13,366
           </li>
           <li>
-            <span>Holders</span>
-            13,366
+            <span>Burned</span>
+            893,261,012.39
         </li>
-        <li>
-          <span>Burned</span>
-          893,261,012.39
-      </li>
-        </ul>
-
+          </ul>
+  
+      </div>
+  
+  
+      </div>
     </div>
+   
+
     </section>
 
 
@@ -505,7 +510,7 @@ to eat after searching the kitchen for ages
         <p class="para mb-5">
           We love to connect & explore new opportunities together.
         </p>
-        <img src="./public/coll.png" alt="">
+        <img width="100%" src="./public/coll.png" alt="">
       </div>
     </section>
 
@@ -591,6 +596,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <script>
+
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -632,6 +638,8 @@ gsap.to(".parallax", {
   y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
   ease: "none"
 });
+
+gsap.fromTo(".panda1-box", { y: "-50", x: "-50px", }, { y: "50px", x: "20", scale: 1, duration: 1, repeat: -1,yoyo:true, ease: "none" });
 
 
 </script>

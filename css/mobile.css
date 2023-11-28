@@ -4,6 +4,16 @@
 
     }
 
+    .capa-section {
+        background-size: cover;
+    }
+
+    .flex-box .flex-col {
+        width: 100%;
+    }
+    .flex-box {
+        flex-wrap: wrap;
+    }
     .cake-navbar ul {
         flex-direction: column;
         position: absolute;
@@ -112,4 +122,69 @@
   .menu-icon {
     display: block;
   }
+
+  .rh {
+    border-radius: 10px;
+    border: 2px solid #EFD912;
+    background: #2E5E2E;
+    display: inline-block;
+    padding: 10px 38px;
+    color: #FFF;
+    font-family: Shojumaru;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.stats-content {
+    flex-direction: column;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    flex-direction: column;
+    gap: 30px;
+}
+.the-title {
+    font-size: 36px;
+}
+
+.exp-section {
+    flex-direction: column;
+}
+.exp-section .default {
+    height: 140px;
+    width: 100%;
+    font-size: 16pt;
+    overflow: hidden;
+    flex-grow: 1;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.def-show h4 {
+    color: #fff;
+    transform: rotate(0deg);
+    margin-top: 0;
+    color: #FFF;
+    font-family: Shojumaru;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88.895%;
+    letter-spacing: 1.44px;
+}
+.tag {
+    margin: 15px auto;
+}
+.exp-section .expand {
+    height: 100% !important;
+}
+.the-title {
+    word-break: break-word;
+}
 }
