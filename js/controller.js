@@ -34,6 +34,18 @@ $('.faq-heading').click(function () {
   $(this).parent('li').toggleClass('the-active').find('.faq-text').slideToggle();
 });
 
+
+$(document).ready(function() {
+  // Smooth scroll to section
+  $('nav a.page').on('click', function(e) {
+      e.preventDefault();
+      var targetSection = $($(this).attr('href'));
+      $('html, body').animate({
+          scrollTop: targetSection.offset().top
+      }, 1000); // Adjust the animation speed (in milliseconds) as needed
+  });
+});
+
 // particle effect 
 
 

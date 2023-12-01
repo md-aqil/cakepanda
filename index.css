@@ -1,4 +1,7 @@
-.cake-film-child {
+body {
+  font-family: var(--font-bai-jamjuree);
+
+}.cake-film-child {
   position: absolute;
   top: 707.2px;
   left: 1008.9px;
