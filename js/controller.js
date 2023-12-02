@@ -46,6 +46,40 @@ $(document).ready(function() {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const memes = document.querySelectorAll('.meme');
+
+  function animateMeme(element) {
+    gsap.to(element, {
+      x: Math.random() * (window.innerWidth + element.clientWidth) - element.clientWidth,
+      y: Math.random() * (window.innerHeight + element.clientHeight) - element.clientHeight,
+      opacity: Math.random(),
+      rotation: 30, // Adjust the rotation to a smaller angle
+      duration: 10, // Make the entire animation slower (5 times)
+      // repeat: -1,
+      yoyo:true,
+      onComplete: function() {
+        gsap.set(element, { opacity: 0, rotation: 0 });
+
+        gsap.to(element, {
+          x: Math.random() * (window.innerWidth + element.clientWidth) - element.clientWidth,
+          y: Math.random() * (window.innerHeight + element.clientHeight) - element.clientHeight,
+          opacity: 1,
+          rotation: 30, // Adjust the rotation for the appearance
+          duration: 7, // Make the appearance slower (5 times)
+          onComplete: function() {
+            animateMeme(element);
+          }
+        });
+      }
+    });
+  }
+
+  memes.forEach(animateMeme);
+});
+
+
 // particle effect 
 
 

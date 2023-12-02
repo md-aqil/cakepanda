@@ -1487,3 +1487,31 @@ letter-spacing: 0;
   line-height: 1.5;
   margin-top: 25px;
 }
+.meme {
+  color: #fff;
+  position: absolute;
+  width: 200px;
+}
+
+
+.sticker {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Text color */
+  position: relative;
+  display: inline-block;
+}
+
+.sticker::before {
+  content: attr(data-text); /* Use the data-text attribute as content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Behind the original text */
+  color: #000; /* Outline color */
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 2px; /* Adjust the padding to control the outline thickness */
+  border-radius: 4px; /* Adjust the border-radius for rounded corners */
+}
