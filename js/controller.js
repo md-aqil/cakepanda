@@ -80,18 +80,20 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 20,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + "Spell " + (index + 1) + "</span>";
+  navigation: {
+    nextEl: ".swiper-button-next-unique",
+    prevEl: ".swiper-button-prev-unique",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
     },
   },
 });
+
 
 // particle effect 
 
