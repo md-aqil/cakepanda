@@ -267,4 +267,39 @@
 .stats-section {
     overflow: hidden;
 }
+
+.card-list:before {
+  
+    width: 100%;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 58px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.swiper-button-prev-unique {
+    left: -15px;
+  }
+  .swiper-button-next-unique {
+    right: -15px;
+  }
+
+  .tax-6-container {
+    position: relative;
+    text-align: center;
+}
+
+.card-list:before {
+    content: none;
+   
+  } 
+  .style-card-box:before {
+    top: -80px;
+  }
+
 }
