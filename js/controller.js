@@ -163,3 +163,35 @@ window.addEventListener("resize", resizeCanvas);
 
 resizeCanvas();
 animateParticles();
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Initial setup
+  const sections = document.querySelectorAll(".content-section");
+
+  // GSAP timeline
+  const timeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".cake-film",
+      endTrigger: ".capa-section",
+      start: "13% 10%", // Start when the top of the trigger is 10% from the top
+      end: "bottom 50%", // End when the bottom of the trigger is 30% from the top
+      scrub: 1,
+      // markers: true,
+    },
+  });
+
+  // Add animations to the timeline
+  timeline.to(".panda1-box", {
+    y: "100%", // Move the object along the y-axis to the center of the viewport
+   
+  });
+
+  // Additional animation to move the panda1-box to the .capa-section
+  timeline.to(".panda1-box", {
+    y: "130%", // Move the object along the y-axis to the bottom of the viewport
+   
+  });
+});
