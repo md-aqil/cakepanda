@@ -3,11 +3,41 @@
     .cake-navbar ul li a  {
 
     }
-
+    .ann-sec {
+        width: 100%;
+    }
+    .brand-info {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
     .capa-section {
         background-size: cover;
     }
+    .announcebox {
+        border-radius: 15px;
+        padding: 15px 10px;
+    }
+    .news-block {
+        width: 100%;
+    }
+    #stats .mt-6 {
+        margin-top: 0 !important;
+    }
+    .announcebox:before {
+        left: 0;
+    }
+    .vlist {
+        flex-direction: column;
+    }
+    .stats-content ul {
+        margin-left: 0 !important;
+    }
 
+    .memes-section {
+        overflow: hidden !important;
+        width: 100%;
+    }
     .flex-box .flex-col {
         width: 100%;
     }
