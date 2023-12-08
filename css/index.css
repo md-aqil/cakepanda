@@ -1815,14 +1815,14 @@ line-height: normal;
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: flex-start;
+  gap: 30px;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .brand-info li img {
  
-  width: 250px;
+  width: 150px;
 }
 .brand-info li  {
   padding: 0;
@@ -1830,8 +1830,9 @@ line-height: normal;
   justify-content: flex-start;
   gap: 10px;
   align-items: center;
-  font-size: 21px;
+  font-size: 16px;
   color: #fff;
+  font-weight: 400;
 }
 
 
