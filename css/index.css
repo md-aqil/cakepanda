@@ -1636,19 +1636,21 @@ letter-spacing: 0;
 }
 
 .swiper-pagination-bullet {
-  width: 110px;
-  height: 28px;
+  width: 20px;
+  height: 6px;
   color: #000;
   font-size: 16px;
-  padding-top: 6px;
   opacity: 1;
   border-radius: 39px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(255 255 255 / 26%);
+  top: 40px;
+  margin-top: 20px !important;
+  position: relative;
 }
 
 .swiper-pagination-bullet-active {
   color: #fff;
-  background: #3e5f26;
+  background: #fff;
 }
 .ybox .float-label {
   display: block;
@@ -1835,4 +1837,28 @@ line-height: normal;
   font-weight: 400;
 }
 
+.mySwiperPast .swiper-slide img {
+  width: 100%;
+}
 
+.mySwiperPast {
+  width: 100%;
+}
+
+.mySwiperPast .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.row-3 {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row-3 .column {
+  width: 26%;
+}
