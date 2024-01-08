@@ -1862,3 +1862,10 @@ line-height: normal;
 .row-3 .column {
   width: 26%;
 }
+.column > h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
