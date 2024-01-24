@@ -245,12 +245,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-var odometer = new Odometer({ 
-  el: $('.odometer')[0], 
-  value: 1000, 
-  theme: 'minimal',
-  duration: 3000
-});
-odometer.render();
+$(document).ready(function () {
+  // Initialize the Intersection Observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // If "whitelist-container" is in the viewport, start the animation
+        animateOdometer();
+        observer.unobserve(entry.target); // Stop observing once triggered
+      }
+    });
+  });
 
-$('.odometer').text(995);
+  // Target the "whitelist-container" element
+  const whitelistContainer = document.querySelector('.whitelist-container');
+  observer.observe(whitelistContainer);
+
+  // Function to animate the odometer
+  function animateOdometer() {
+    var odometer = new Odometer({ 
+      el: $('.odometer')[0], 
+      value: 1000, 
+      theme: 'minimal',
+      duration: 5000
+    });
+    odometer.render();
+
+    // Set the desired value
+    $('.odometer').text(995);
+  }
+});
