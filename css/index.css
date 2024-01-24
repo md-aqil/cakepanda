@@ -986,7 +986,7 @@ body {
 }
 
 .mb-5 {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
 
 .mb-6 {
@@ -1188,23 +1188,33 @@ letter-spacing: 3.36px;
     margin: auto;
     align-items: center;
 }
+#countdown {
+  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .stats-content ul {
   list-style: none;
   margin: 0;
-  width: 33%;
   padding: 0;
 }
 .stats-content ul li{
   color: #285028;
 font-family: Bai Jamjuree;
-font-size: 40px;
+font-size: 15px;
 font-style: normal;
-font-weight: 700;
+font-weight: 400;
 line-height: normal;
 letter-spacing: 2.4px;
 text-align: left !important;
 padding-top: 15px;
-padding-bottom: 15px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+flex-direction:column;
+
+
 }
 
 .stats-content ul li span{
@@ -1877,10 +1887,8 @@ line-height: normal;
 }
 .border-list li {
   color: #FFF;
-  leading-trim: both;
-  text-edge: cap;
   font-family: "Bai Jamjuree";
-  font-size: 22px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -1888,7 +1896,7 @@ line-height: normal;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.spot-list li .st {
+ .st {
 margin:0;
 color: #FFF;
 leading-trim: both;
@@ -1907,11 +1915,12 @@ text-transform: uppercase;
 leading-trim: both;
 text-edge: cap;
 font-family: "Bai Jamjuree";
-font-size: 90px;
+font-size: 55px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 5.4px;
+
 margin:0;
 }
 .spot-list {
@@ -1930,32 +1939,22 @@ margin:0;
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
   text-align: center;
   color: #fff;
 }
 #countdown ul li span{
-  border-radius: 6px;
-  background: var(--ygrade, linear-gradient(180deg, #FFE925 0%, #B2A000 100%));
-  display: inline-flex;
-padding: 15;
+  
 justify-content: center;
 align-items: center;
 
-color: #F2F2F2;
-text-align: right;
-leading-trim: both;
-text-edge: cap;
-text-shadow: 0px 1.543px 3.085px rgba(0, 0, 0, 0.25);
+color: #285028;
+
 font-family: "Bai Jamjuree";
-font-size: 60px;
-font-weight: 400;
+font-size: 30px;
+font-weight: bold;
   display:block;
-  padding: 10px 30px;
-    margin-bottom: 10px;
-    border: 4px solid #224122;
-    box-shadow: 0 0 5px 0 #00000061;
+  padding: 5px 22px;
+   
 }
 
 .btn-primary {
@@ -1989,6 +1988,43 @@ font-weight: 400;
 line-height: normal;
 text-decoration-line: underline;
 }
-.whitelist-container {
-  width: 60%;
+
+.ftr {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+    top: -70px;
+    margin-top: 80px;
+  margin-bottom: -130px;
+}
+.odometer-digit {
+  font-family: "Bai Jamjuree";
+    font-weight: bold;
+    font-size: 60px;
+}
+.whitelist-container .float-label{
+  padding: 0 50px;
+}
+.grab-btn {
+  background: #059825;
+    color: #fff;
+    font-size: 24px;
+    font-family: var(--font-bai-jamjuree);
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.infol {
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ul.infol li {
+  color: #003900 !important;
+  font-family: "Bai Jamjuree";
+  font-size: 16px !important;;
+  font-weight: 500 !important;
+  letter-spacing:0;
+  padding:5px;
 }
