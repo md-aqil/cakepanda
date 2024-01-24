@@ -332,4 +332,19 @@
     top: -80px;
   }
 
+  #countdown ul {
+    gap:0;
+  }
+  #countdown ul li span {
+    font-size:35px;
+
+
+  }
+  .spot-list li h1 {
+    font-size:35px;
+  }
+  .spot-list li .st {
+    font-size:16px;
+
+  }
 }

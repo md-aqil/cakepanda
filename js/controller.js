@@ -195,3 +195,62 @@ document.addEventListener("DOMContentLoaded", function () {
    
   });
 });
+
+
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "01/26/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+
+  const countDown = new Date(birthday).getTime();
+  const x = setInterval(function() {    
+    const now = new Date().getTime(),
+          distance = countDown - now;
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(distance / day),
+          hours = Math.floor((distance % day) / hour),
+          minutes = Math.floor((distance % hour) / minute),
+          seconds = Math.floor((distance % minute) / second);
+
+    // Display two-digit format
+    document.getElementById("days").innerText = String(days).padStart(2, "0");
+    document.getElementById("hours").innerText = String(hours).padStart(2, "0");
+    document.getElementById("minutes").innerText = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").innerText = String(seconds).padStart(2, "0");
+
+    // Do something later when the date is reached
+    if (distance < 0) {
+      document.getElementById("countdown").style.display = "none";
+      document.getElementById("headline").innerText = "It's my birthday!";
+      document.getElementById("content").style.display = "block";
+      clearInterval(x);
+    }
+  }, 0);
+})();
+
+
+
+var odometer = new Odometer({ 
+  el: $('.odometer')[0], 
+  value: 1000, 
+  theme: 'minimal',
+  duration: 3000
+});
+odometer.render();
+
+$('.odometer').text(995);
