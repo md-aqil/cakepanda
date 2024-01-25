@@ -378,4 +378,9 @@
     bottom: -40px !important;
     left: 40px !important;
 }
+.group {
+    transform-origin: 0 0;
+    font-size: 50px;
+    font-family: var(--font-shojumaru);
+}
 }
