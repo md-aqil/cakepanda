@@ -347,4 +347,35 @@
     font-size:16px;
 
   }
+
+  .stats-content .row {
+    flex-direction:column;
+  }
+  .ctp1 {
+    margin: 0 auto !important;
+  }
+
+
+  .countdown-section {
+    margin-top: 0;
+}
+.ftr-stats {
+    width: 100%;
+}
+.ftr-stats .row .col {
+    width: 100% !important;
+    flex-basis: 100%;
+    
+}
+.hidden-mobile {
+    display:none;
+}
+.w3d {
+   
+    top: initial !important;
+    right: inherit !important;
+    
+    bottom: -40px !important;
+    left: 40px !important;
+}
 }

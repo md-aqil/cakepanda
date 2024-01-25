@@ -227,16 +227,16 @@ document.addEventListener("DOMContentLoaded", function () {
           minutes = Math.floor((distance % hour) / minute),
           seconds = Math.floor((distance % minute) / second);
 
-    // Display two-digit format
-    document.getElementById("days").innerText = String(days).padStart(2, "0");
-    document.getElementById("hours").innerText = String(hours).padStart(2, "0");
-    document.getElementById("minutes").innerText = String(minutes).padStart(2, "0");
+    // Display two-digit format with a colon after days
+    document.getElementById("days").innerText = String(days).padStart(2, "0") + " :";
+    document.getElementById("hours").innerText = String(hours).padStart(2, "0") + " :";
+    document.getElementById("minutes").innerText = String(minutes).padStart(2, "0") + " :";
     document.getElementById("seconds").innerText = String(seconds).padStart(2, "0");
 
     // Do something later when the date is reached
     if (distance < 0) {
       document.getElementById("countdown").style.display = "none";
-      document.getElementById("headline").innerText = "It's my birthday!";
+      document.getElementById("headline").innerText = "Times Up";
       document.getElementById("content").style.display = "block";
       clearInterval(x);
     }
@@ -275,3 +275,49 @@ $(document).ready(function () {
     $('.odometer').text(995);
   }
 });
+
+
+const generateGlowButtons = () => {
+  document.querySelectorAll(".glow-button").forEach((button) => {
+      let gradientElem = button.querySelector('.gradient');
+      
+      if(!gradientElem) {
+          gradientElem = document.createElement("div");
+          gradientElem.classList.add("gradient");
+
+          button.appendChild(gradientElem);
+      }
+
+      button.addEventListener("pointermove", (e) => {
+          const rect = button.getBoundingClientRect();
+
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          gsap.to(button, {
+              "--pointer-x": `${x}px`,
+              "--pointer-y": `${y}px`,
+              duration: 0.6,
+          });
+
+          gsap.to(button, {
+              "--button-glow": chroma
+              .mix(
+                  getComputedStyle(button)
+                  .getPropertyValue("--button-glow-start")
+                  .trim(),
+                  getComputedStyle(button).getPropertyValue("--button-glow-end").trim(),
+                  x / rect.width
+              )
+              .hex(),
+              duration: 0.2,
+          });
+      });
+  });
+}
+
+// Set variables on loaded
+document.addEventListener('DOMContentLoaded', generateGlowButtons);
+
+// Set variables on resize
+window.addEventListener('resize', generateGlowButtons);

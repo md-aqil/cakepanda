@@ -6,7 +6,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./meme-nation.css">
     <link rel="stylesheet" href="https://github.hubspot.com/odometer/themes/odometer-theme-minimal.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+
+    
+	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
     <link rel="stylesheet" href="./starter.css">
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./css/expand.css">
@@ -61,6 +64,7 @@
               lifetime earning
             </div>
 
+           
             <div class="a-platform-where-container fade-in delay_2" data-scroll>
               <span>A meme community empowering sustained lifetime passive earnings<br>to token holders <span style="color: #efd912; font-weight: bold;"> with the power of DeFi.</span> </span>
              
@@ -208,16 +212,16 @@
       <div class="container spacer">
         <div class="flex-box">
           <div class="flex-col index1">
-            <div class="vector-group">
-              <div class="group fade-in delay_2" style="margin-bottom: 30px;" data-scroll="">
-                <div class="div">$</div>
-                <div class="c">C</div>
-                <div class="a">A</div>
-                <div class="p">P</div>
-                <div class="a1">A</div>
+            <div class="vector-group group">
+
+              <div aria-hidden="true" class="reflective" data-splitting="">
+                <span>$CAPA</span>
+                <span>$CAPA</span>
               </div>
+
+              
   
-              <div class="a-hyper-deflationary-and-container fade-in delay_3" data-scroll="">
+              <div class="a-hyper-deflationary-and-container mt-7">
                 <i>A</i>
                 <i class="hyper-deflationary-and-elastic"
                   >hyper-deflationary and elastic supply token</i
@@ -257,6 +261,7 @@
               <h1 class="" style="font-size: 24px; margin: 0; line-height: 1;">
                 CAPA Token is pre-listed On Coinmarketcap
               </h1>
+              
             </div>
            
   
@@ -278,11 +283,13 @@
 
   <section class="bg-theme spacer ">
 
-    <section class="por text-center spacer">
+    <section class="por text-center">
       <div class="container whitelist-container">
-        <h2 class="text-white the-title mb-1">
+        <h2 class="text-white the-title mb-1 mexiwave" data-scroll data-splitting="">
           Presale whitelist
         </h2>
+        
+
         <ul class="border-list">
             <li>
               <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -313,50 +320,57 @@
 
         
         <div class="spots-sec mt-5 mb-5">
-          <ul class="spot-list mb-5">
-            <li >
-              <span class="st">Total WL. spots</span>
-              <h1>1000</h1>
-            </li>
-           
-          </ul>
+          <span class="st">Available WL spots</span>
       </div>
      
 
         <div class="double-box index1">
-          <img src="./public/c-coin.png" style="position: absolute;
+          <img src="./public/c-coin.png" class="hidden-mobile" style="position: absolute;
           left: 0;
-          top: -80px;" class="" alt="">
+          top: -80px;"  data-scroll data-scroll-parallax alt="">
+
+          <div aria-hidden="true" class="carousel w3d" data-splitting="" style="font-size: 30px;
+          color: var(--color-white);
+          font-family: var(--font-shojumaru);
+          position: absolute;
+          top: -50px;
+          right: 30px;
+          ">
+            $CAPA.
+          </div>
 
            <img src="./public/c-coin.png" style="position: absolute;
            right: 0;
-           bottom: -80px;" alt="">
+           bottom: -80px;" data-scroll data-scroll-parallax alt="">
           <div class="ftr">
-            <span class="st">Available WL. spots</span>
-            <h4 class="float-label odometer" id="odometer">1000</h4>
+            
+            <h4 class="float-label odometer" style="position: static;" id="odometer">1000</h4>
+            <span class="st" style="color: #285028;">Total WL spots <b>1000</b></span>
           </div>
           
-          <div class="stats-content ">
-              <div class="row">
+          <div class="stats-content ftr-stats">
+              <div class="row" style="align-items: center;">
                 <div class="col text-center" style="flex-basis: 35%;">
-                    <img width="100%" src="./public/capa-token1.png" style="margin-left: -50px;" alt="">
+                    <img width="100%" class="ctp1" src="./public/capa-token1.png" style="margin-left: -50px;" alt="">
                 </div>
 
                 <div class="col" style="width: 65%;">
                   <div class="countdown-section">
                     <div id="countdown">
                       <ul>
-                        <li><span id="days"></span>days</li>
-                        <li><span id="hours"></span>Hours</li>
-                        <li><span id="minutes"></span>Minutes</li>
-                        <li><span id="seconds"></span>Seconds</li>
+                        <li><span id="days"></span></li>
+                        <li><span id="hours"></span></li>
+                        <li><span id="minutes"></span></li>
+                        <li><span id="seconds"></span></li>
                       </ul>
                       <div class="text-center ">
-                        <p>
-                          <a href="" class="btn-primary grab-btn">Grab your white list</a>
-            
+                        <p class="mt-2 mb-2">
+                          <button class="glow-button">
+                            <span>Grab your white list</span>
+                          </button>
+
                         </p>
-                        <p>
+                        <p class="mb-3">
                       <a href="" class="link-text" style="color: #059825;">View Whitelisted List</a>
             
                         </p>
@@ -365,7 +379,7 @@
                   </div>
 
                   <ul class="infol mb-5" style="margin-left: 100px;">
-                    <h2 class="mb-1">Way to get a WL</h2>
+                    <h2 class="mb-1">Ways to get a WL</h2>
                     <li>Participate in our WL campaign on Galxe </li>
                     <li>Participate in Testnet campaign on Galxe</li>
                     <li>Win WL from one of our AMAs in other communities</li>
@@ -515,7 +529,7 @@ to eat after searching the kitchen for ages
 
     <section class="bg-theme spacer" id="tokenomics">
       <div class="container">
-        <h2 class="text-white the-title text-center">
+        <h2 class="text-white the-title text-center mb-5">
           Tokenomics
 
         </h2>
@@ -718,11 +732,11 @@ to eat after searching the kitchen for ages
         
               </div>
   </section>
-  
+<!--   
   <section class="stats-section por text-center bg-theme spacer index1" id="gallery">
     
     <div class="container">
-      <h2 class="text-white the-title">
+      <h2 class="text-white the-title mb-5">
         Gallery
       </h2>
 
@@ -816,16 +830,16 @@ to eat after searching the kitchen for ages
           </div>
         </div>
     </div>
-    </section>
+    </section> -->
 
     <section class="stats-section por text-center bg-theme spacer" id="roadmap">
      
-      <h2 class="text-white the-title">
+      <h2 class="text-white the-title mb-5">
         RoadMap
       </h2>
 
       <section class="exp-section index1">
-        <div class="expand bg-theme ">
+        <div class="expand bg-theme add-scroll">
           <article class="def-show">
             <span class="tag">1</span>
             <h4>Inception</h4>
@@ -845,7 +859,7 @@ to eat after searching the kitchen for ages
           </ul>
         </div>
 
-        <div class="bg-yellow">
+        <div class="bg-yellow add-scroll">
           <article class="def-show">
             <span class="tag">2</span>
             <h4>Products</h4>
@@ -864,7 +878,7 @@ to eat after searching the kitchen for ages
           </ul>
         </div>
       
-        <div class="bg-theme">
+        <div class="bg-theme add-scroll">
           <article class="def-show">
             <span class="tag">3</span>
             <h4>Education</h4>
@@ -882,7 +896,7 @@ to eat after searching the kitchen for ages
           </ul>
         </div>
 
-        <div class="bg-yellow">
+        <div class="bg-yellow add-scroll">
           <article class="def-show">
             <span class="tag">4</span>
             <h4>Marketing</h4>
@@ -909,7 +923,7 @@ to eat after searching the kitchen for ages
 
           </ul>
         </div>
-        <div class="bg-theme">
+        <div class="bg-theme add-scroll">
           <article class="def-show">
             <span class="tag">5</span>
             <h4>Citizens</h4>
@@ -929,7 +943,7 @@ to eat after searching the kitchen for ages
            
           </ul>
         </div>
-        <div class="bg-yellow">
+        <div class="bg-yellow add-scroll">
           <article class="def-show">
             <span class="tag">6</span>
             <h4>Assets</h4>
@@ -1076,7 +1090,7 @@ to eat after searching the kitchen for ages
   <section class="spacer bg-curve stats-section" id="blog">
     <div class="container">
       <div class="dual-text-box  text-center index1">
-        <h2 class="the-title">
+        <h2 class="the-title mt-8">
           Blogs
         </h2>
         <h4 class="subheading">
@@ -1257,46 +1271,21 @@ to eat after searching the kitchen for ages
     </a>
     
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://github.hubspot.com/odometer/odometer.js"></script>
- 
-    <script>
-      /* This code is not required for the animation. This is only needed for the repeatation */
 
-
-// TODO: To increase all numbers independently
-// TODO: Randomize fadeIn of different digits
-
-
-      
-
-$(function(){
-	$('.repeat').click(function(){
-    	var classes =  $(this).parent().attr('class');
-        $(this).parent().attr('class', 'animate');
-        var indicator = $(this);
-        setTimeout(function(){ 
-        	$(indicator).parent().addClass(classes);
-        }, 20);
-    });
-});
-
-
-
-
-    </script>
-
-<script
-src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-type="module"
-></script>
 <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+
 <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+
 <script src="./scroll-out.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
 <script src="./js/controller.js"></script>
 
 <!-- Google tag (gtag.js) -->
@@ -1310,6 +1299,18 @@ type="module"
 </script>
 
 <script>
+
+$(function(){
+	$('.repeat').click(function(){
+    	var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+        	$(indicator).parent().addClass(classes);
+        }, 20);
+    });
+});
+
 
 $(document).ready(function () {
         $('.nav-toggle').click(function () {
@@ -1356,6 +1357,12 @@ gsap.to(".parallax", {
         clickable: true,
       },
   });
+
+  Splitting()
+
+ScrollOut({
+	targets: ['.word', '.falling', '.scrolled', '.glare', '.stream'],
+})
 </script>
   </body>
 </html>

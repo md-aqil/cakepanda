@@ -1,6 +1,8 @@
 var ScrollOut = (function () {
   'use strict';
 
+  
+
   function clamp(v, min, max) {
       return min > v ? min : max < v ? max : v;
   }

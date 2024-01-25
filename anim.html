@@ -1,297 +1,19 @@
 
-:root {
-	--theme-color: #0063FD; 
-	--theme-color1: #0063FD; 
-	--theme-color2: #0063FD;
-	--green-color: #9ee664;
-	--yellow-color: #0063FD;
-	--star-color: #e6ac64;
-	--theme-dark:#22242F;
-	--black-color: #000;
-	--dark-color: #212121;
-	--light-color:#888888;
-	--text-color:#676767;
-	--title-fontsize: 60px;
-	--text-fontsize:16px;
-	--swiper-pagination-color: #00796B;
-	--swiper-theme-color:#FFC107;
-	--swiper-navigation-size:35px;
-	--btn-radious: 4px;
-	--btn-round: 40px;
-	--gray-color: #EDEDF2;
-	--gray-grade: radial-gradient(68.41% 102.62% at 50% 50%, #FFFFFF 0%, #F0F7FF 100%);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+
+    <title>Document</title>
 
 
-.intro-section {
-	text-align: center;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-			flex-direction: column;
-	-webkit-box-align: center;
-			align-items: center;
-	-webkit-box-pack: center;
-			justify-content: center;
-  }
-  
-  .content-section {
-	--scroll-length: 1.5;
-	height: calc( var(--scroll-length) * 100vh );
-	width: 100%;
-  }
-  .content-section .content .subheading,
-  .content-section .content .paragraph {
-	opacity: 1;
-	opacity: calc( 1 + var(--viewport-y) );
-  }
-  
-  .figure {
-	width: 100%;
-	height: 100vh;
-	margin: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-  }
-  .figure > img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	max-width: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
-	-o-object-position: center center;
-	   object-position: center center;
-  }
-  
-  .content {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	max-width: 35em;
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	color: white;
-	padding: 2em;
-	font-size: 2.5vmin;
-  }
-  .content * {
-	text-shadow: 0 0 4vmin rgba(0, 0, 0, 0.25);
-  }
-  .content > .header {
-	grid-row: 1 / 2;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-			flex-direction: column;
-	-webkit-box-pack: end;
-			justify-content: flex-end;
-  }
-  .content > .paragraph {
-	grid-row: 2 / 3;
-	line-height: 1.5;
-  }
-  
-  .heading {
-	font-size: 2.75em;
-	margin: 0;
-  }
-  
-  .subheading {
-	font-size: 1.25em;
-	font-weight: 600;
-	margin-bottom: .5em;
-  }
-  
-  /* ---------------------------------- */
-  .figure {
-	--scale: calc(.8 +
-	  (.2 * var(--scroll-length) * var(--visible-y))
-	);
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	left: 0;
-	margin: 0;
-	display: block;
-	overflow: hidden;
-	will-change: transform;
-	-webkit-transform: scale(var(--scale));
-			transform: scale(var(--scale));
-  }
-  .figure:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: black;
-	opacity: calc( var(--visible-y) );
-  }
-  .figure > img {
-	display: block;
-	will-change: transform;
-	-webkit-transform: scale(calc(1 / var(--scale)));
-			transform: scale(calc(1 / var(--scale)));
-  }
-  
-  /* ---------------------------------- */
+    
 
-
-  .fade-in[data-scroll="in"], .fade-in-right[data-scroll="in"], .fade-in-left[data-scroll="in"], .fade-in-up[data-scroll="in"] {
-	opacity: 1;
-	-webkit-transform: translateY(0) scale(1);
-			transform: translateY(0) scale(1);
-  }
-  
-  
-
-  .fade-in[data-scroll="in"] .char:after {
-	opacity: 1;
-	-webkit-transform: translateY(0);
-			transform: translateY(0);
-  }
-  
-  
-/* spin container */
-
-.spin-container {
-  width: 100%;
-  height: 100%;
-  -webkit-animation: spin 12s linear infinite;
-          animation: spin 12s linear infinite;
-  position: relative;
-}
-.box {
-  width: 60vmin;
-  height: 60vmin;
-  border: 1px dashed rgba(255, 255, 255, 0.4);
-  position: relative;
-}
-.shape {
-  width: 100%;
-  height: 100%;
-  transition: border-radius 1s ease-out;
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  -webkit-animation: morph 8s ease-in-out infinite both alternate;
-          animation: morph 8s ease-in-out infinite both alternate;
-  position: absolute;
-  overflow: hidden;
-  z-index: 5;
-}
-
-
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-}
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-  }
-}
-
-  
-  .delay_1 {
-	transition-delay: 200ms;
-	animation-delay: 200ms;
-  }
-  
-  .delay_2 {
-	transition-delay: 400ms !important;
-	animation-delay: 400ms !important;
-  }
-  
-  .delay_3 {
-	transition-delay: 600ms !important;
-	animation-delay: 600ms !important;
-	
-  }
-  
-  .delay_4 {
-	transition-delay: 800ms !important;
-	animation-delay: 800ms !important;
-	
-  }
-  
-  .delay_5 {
-	transition-delay: 1000ms !important;
-	animation-delay: 1000ms !important;
-	
-  }
-  
-  .delay_6 {
-	transition-delay: 1200ms !important;
-	animation-delay: 1200ms !important;
-	
-  }
-  
-  .delay_7 {
-	transition-delay: 1400ms !important;
-	animation-delay: 1400ms !important;
-	
-  }
-  
-  .delay_8 {
-	transition-delay: 1600ms !important;
-	animation-delay: 1600ms !important;
-	
-  }
-  
-  .delay_9 {
-	transition-delay: 1800ms !important;
-	animation-delay: 1800ms !important;
-	
-  }
-  
-  .delay_10 {
-	transition-delay: 2000ms !important;
-	animation-delay: 2000ms !important;
-	
-  }
-
-
-  /* Scrollbar Styling */
-.add-scroll::-webkit-scrollbar {
-    width: 5px;
-}
- 
-.add-scroll::-webkit-scrollbar-track {
-    background-color: #ebebeb;
-    -webkit-border-radius: 10px;
-	border-radius: 10px;
-	margin-right: 10px;
-}
-
-.add-scroll::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #7B7B7B; 
-}
-
-
-
-:root {
-	--font-size: 50px;
---color: #000;
---transition-speed: 0;
---transition-step: 0;
-}
-
-
-/* Blowing */
-
-
+    <style>
 
 :where(:not(fieldset,progress,meter)) {
     background-origin: border-box;
@@ -316,7 +38,25 @@
 	box-sizing: border-box;
 }
 
+body {
+	background: var(--gradient-1);
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	font-family: 'Google Sans', sans-serif, system-ui;
+	overflow: hidden;
+	color: var(--gray-0);
+}
 
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	height: 100vh;
+	width: 100vw;
+	scroll-snap-type: y mandatory;
+	overflow: auto;
+}
 
 .sr-only {
 	position: absolute;
@@ -439,7 +179,7 @@
 }
 
 .carousel [data-scroll="in"] {
-	animation: carousel-spin calc(var(--transition-speed) * 20) infinite linear reverse;
+	animation: carousel-spin calc(var(--transition-speed) * 8) infinite linear reverse;
 }
 
 @keyframes carousel-spin {
@@ -485,19 +225,13 @@
 }
 
 .roulette [data-scroll="in"] {
-	animation: roulette calc(var(--transition-speed) * 80) var(--transition-speed) infinite linear;
+	animation: roulette calc(var(--transition-speed) * 8) var(--transition-speed) infinite linear;
 }
   
 .roulette .word {
   height: var(--font-size);
   width: var(--font-size);
 }
-
-[data-scroll-parallax] {
-	transform: translate3d(0, calc(var(--viewport-y) * -4vh), 0);
-	transition: transform 0.12s ease;
-	will-change: transform;
-  }
 
 .roulette .char {
 	position: absolute;
@@ -1227,7 +961,7 @@
 .bloom:before {
 	content: attr(data-word);
 	position: absolute;
-	color: red;
+	color: hsl(0 0% 100% / 0.05);
 	inset: 0;
 	font-size: var(--font-size);
 }
@@ -1560,136 +1294,432 @@
 	}
 }
 
-@media(prefers-reduced-motion: reduce) {
+/*@media(prefers-reduced-motion: reduce) {
 	:root {
 		--transition-speed: 2s;
 		--transition-step: 0.1s;
 	}
-}
+}*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="effect">
+          <div>Scroll for cascading text effects!</div>
+        </li>
+        <li class="effect effect--stream">
+          <div aria-hidden="true" class="stream" data-splitting="">
+            <span>Stream</span>
+          </div>
+          <span class="sr-only">Stream</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="strikethrough" data-splitting="">
+            <span>Strikethrough</span>
+          </div>
+          <span class="sr-only">Strikethrough</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="reflective" data-splitting="">
+            <span>Reflective</span>
+            <span>Reflective</span>
+          </div>
+          <span class="sr-only">Reflective</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="glitchy" data-splitting="">
+            <span>Glitchy</span>
+          </div>
+          <span class="sr-only">Glitchy</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="taste" data-splitting>
+            Taste
+            Taste
+            Taste
+            Taste
+            Taste
+            Taste
+            Taste
+            Taste
+          </div>
+          <span class="sr-only">Taste</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="glitch" data-splitting="">
+            <span>Glitch</span>
+          </div>
+          <span class="sr-only">Glitch</span>
+        </li>
+        <li class="effect">
+          <div data-word="Bloom North" aria-hidden="true" class="bloom bloom--north" data-splitting="">
+            <span>Bloom North</span>
+          </div>
+          <span class="sr-only">Bloom North</span>
+        </li>
+        <li class="effect">
+          <div data-word="Bloom North East" aria-hidden="true" class="bloom bloom--north-east" data-splitting="">
+            <span>Bloom North East</span>
+          </div>
+          <span class="sr-only">Bloom North East</span>
+        </li>
+        <li class="effect">
+          <div data-word="Bloom East" aria-hidden="true" class="bloom bloom--east" data-splitting="">
+            <span>Bloom East</span>
+          </div>
+          <span class="sr-only">Bloom East</span>
+        </li>
+        <li class="effect">
+          <div data-word="Bloom South East" aria-hidden="true" class="bloom bloom--south-east" data-splitting="">
+            <span>Bloom South East</span>
+          </div>
+          <span class="sr-only">Bloom South East</span>
+        </li>
+        <li class="effect">
+          <div data-word="Bloom South" aria-hidden="true" class="bloom bloom--south" data-splitting="">
+            <span>Bloom South</span>
+          </div>
+          <span class="sr-only">Bloom South</span>
+        </li>
+        <li class="effect">
+          <div data-word="Bloom South West" aria-hidden="true" class="bloom bloom--south-west" data-splitting="">
+            <span>Bloom South West</span>
+          </div>
+          <span class="sr-only">Bloom South West</span>
+        </li>
+        <li class="effect">
+          <div data-word="Bloom West" aria-hidden="true" class="bloom bloom--west" data-splitting="">
+            <span>Bloom West</span>
+          </div>
+          <span class="sr-only">Bloom West</span>
+        </li>
+        <li class="effect">
+          <div data-word="Bloom North West" aria-hidden="true" class="bloom bloom--north-west" data-splitting="">
+            <span>Bloom North West</span>
+          </div>
+          <span class="sr-only">Bloom North West</span>
+        </li>
+      
+        <li class="effect">
+          <div aria-hidden="true" class="slots" data-splitting="">
+            Slots
+          </div>
+          <span class="sr-only">Slots</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="enter" data-splitting="">
+            Enter
+          </div>
+          <span class="sr-only">Enter</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="random" data-splitting="">
+            Random
+          </div>
+          <span class="sr-only">Random</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="swapsies" data-splitting="">
+            Swapsies
+          </div>
+          <span class="sr-only">Swapsies</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="perspective" data-splitting="">
+            Perspective
+          </div>
+          <span class="sr-only">Perspective</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="zipping" data-splitting="">
+            Zipping
+          </div>
+          <span class="sr-only">Zipping</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="conveyor" data-splitting="">
+            Conveyor
+          </div>
+          <span class="sr-only">Conveyor</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="meeting" data-splitting="">
+            Meeting
+          </div>
+          <span class="sr-only">Meeting</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="blowing" data-splitting="">
+            Blowing
+          </div>
+          <span class="sr-only">Blowing</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="swinging" data-splitting="">
+            Swinging
+          </div>
+          <span class="sr-only">Swinging</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="bubbling" data-splitting="">
+            Bubbling
+          </div>
+          <span class="sr-only">Bubbling</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="karaoke" data-splitting="">
+            Karaoke
+          </div>
+          <span class="sr-only">Karaoke</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="rolling" data-splitting="">
+            Rolling
+          </div>
+          <span class="sr-only">Rolling</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="bulge" data-splitting="">
+            Bulge
+          </div>
+          <span class="sr-only">Bulge</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="folding" data-splitting="">
+            Folding
+          </div>
+          <span class="sr-only">Folding</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="turning" data-splitting="">
+            Turning
+          </div>
+          <span class="sr-only">Turning</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="scaling" data-splitting="">
+            Scaling
+          </div>
+          <span class="sr-only">Scaling</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="blocks" data-splitting="">
+            Blocks
+          </div>
+          <span class="sr-only">Blocks</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="filling" data-splitting="">
+            Filling
+          </div>
+          <span class="sr-only">Filling</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="spinning" data-splitting="">
+            Spinning
+          </div>
+          <span class="sr-only">Spinning</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="fading" data-splitting="">
+            Fading
+          </div>
+          <span class="sr-only">Fading</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="flipping" data-splitting="">
+            Flipping
+          </div>
+          <span class="sr-only">Flipping</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="slide" data-splitting="">
+            Sliding
+          </div>
+          <span class="sr-only">Sliding</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="carousel" data-splitting="">
+            Carousel•
+          </div>
+          <span class="sr-only">Carousel</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="mexiwave" data-splitting="">
+            Mexiwave
+          </div>
+          <span class="sr-only">Mexiwave</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="bloat" data-splitting="">
+            Bloat Bloat Bloat Bloat Bloat
+          </div>
+          <span class="sr-only">Bloat</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="roulette" data-splitting="">
+            Roulette•
+          </div>
+          <span class="sr-only">Roulette</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="hinged" data-splitting="">
+            Hinged
+          </div>
+          <span class="sr-only">Hinged</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="cascade" data-splitting="">
+            Cascade
+          </div>
+          <span class="sr-only">Cascade</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="tossing" data-splitting="">
+            Tossing
+          </div>
+          <span class="sr-only">Tossing</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="wave" data-splitting="">
+            Wave
+          </div>
+          <span class="sr-only">Wave</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="rising" data-splitting="">
+            Rising
+          </div>
+          <span class="sr-only">Rising</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="twirl" data-splitting="">
+            Twirl
+          </div>
+          <span class="sr-only">Twirl</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="tumbling" data-splitting="">
+            Tumbling
+          </div>
+          <span class="sr-only">Tumbling</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="backflip" data-splitting="">
+            Backflip!
+          </div>
+          <span class="sr-only">Backflip</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="jump" data-splitting="">
+            Jump!
+          </div>
+          <span class="sr-only">Jump</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="glare">
+            Glare
+          </div>
+          <span class="sr-only">Glare</span>
+        </li>
+        <li class="effect">
+          <div aria-hidden="true" class="expanding" data-splitting="">
+            Expanding Expanding Expanding Expanding Expanding
+          </div>
+          <span class="sr-only">Expanding</span>
+        </li>
+        <li class="effect">
+          <div class="falling-wrapper">
+            <div aria-hidden="true" class="falling" data-splitting="">
+              Falling
+            </div>
+          </div>
+          <span class="sr-only">Falling</span>
+        </li>
+        <li class="effect">
+          <div class="scrolled-wrapper">
+            <div aria-hidden="true" class="scrolled" data-splitting="">
+              Scrolled
+            </div>
+          </div>
+          <span class="sr-only">Scrolled</span>
+        </li>
+        <li class="effect">
+          <div>Thanks for scrollin'!</div>
+        </li>
+      </ul>
 
-.blowing .char {
-	animation-duration: calc(var(--transition-speed) * 4);
-	animation-fill-mode: both;
-	transform-origin: 0 100%;
-	animation-delay: calc(var(--char-index) * (var(--transition-step) * 0.25));
-}
-
-.blowing [data-scroll="in"] .char {
-	animation-name: blowing;
-}
-
-@keyframes blowing {
-	50%, 60%, 70% {
-    transform: skewX(-35deg);
-  }
-  55%, 65%, 75% {
-   	transform: skewX(-40deg);
-  }
-}
-
-
-/* Mexican Wave */
-.mexiwave [data-scroll="in"] .char {
-	animation: mexiwave var(--transition-speed) calc(var(--char-index) * var(--transition-step)) ease;
-}
-
-@keyframes mexiwave {
-  50% {
-  	transform: translate(0, -50%);
-  }
-}
-
-/* glow button */
-
-.glow-button {
-	/* --button-background: #09041e; */
-	--button-color: #fff;
-	--button-shadow: rgba(33, 4, 104, 0.2);
-	--button-shine-left: rgba(255, 255, 245, 0.5);
-	--button-shine-right: #059825;
-	--button-glow-start: #B000E8;
-	--button-glow-end: #009FFD;
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-			appearance: none;
-	outline: none;
-	border: none;
-	font-family: inherit;
-	font-size: 21px;
-	font-weight: 500;
-	border-radius: 40px;
-	position: relative;
-	line-height: 24px;
-	cursor: pointer;
-	color: var(--button-color);
-	padding: 0;
-	margin: 0;
-	background: none;
-	z-index: 1;
-	box-shadow: 0 8px 20px var(--button-shadow);
-	overflow:hidden;
-	border: 2px solid #28502887;
-  }
-  .glow-button .gradient {
-	position: absolute;
-	inset: 0;
-	border-radius: inherit;
-	overflow: hidden;
-	-webkit-mask-image: -webkit-radial-gradient(white, black);
-	transform: scaleY(1.02) scaleX(1.3) rotate(-0.35deg);
-  }
-  .glow-button .gradient:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	transform: scale(1.05) translateY(-44px) rotate(0deg) translateZ(0);
-	padding-bottom: 100%;
-	border-radius: 50%;
-	background: linear-gradient(90deg, var(--button-shine-left), var(--button-shine-right));
-	-webkit-animation: rotate linear 2s infinite;
-			animation: rotate linear 2s infinite;
-  }
-  .glow-button span {
-	z-index: 1;
-	position: relative;
-	display: block;
-	padding: 20px 50px;
-	box-sizing: border-box;
+	  
+	  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 	
-	background-color: var(--button-background);
-	overflow: hidden;
-	-webkit-mask-image: -webkit-radial-gradient(white, black);
-  }
-  .glow-button span:before {
-	content: "";
-	position: absolute;
-	left: -16px;
-	top: -16px;
-	transform: translate(var(--pointer-x, 0px), var(--pointer-y, 0px)) translateZ(0);
-	width: 32px;
-	height: 32px;
-	border-radius: 50%;
-	background-color: var(--button-glow, transparent);
-	opacity: var(--button-glow-opacity, 0);
-	transition: opacity var(--button-glow-duration, 0.5s);
-	filter: blur(20px);
-  }
-  .glow-button:hover {
-	--button-glow-opacity: 1;
-	--button-glow-duration: .25s;
-  }
-  
-  @-webkit-keyframes rotate {
-	to {
-	  transform: scale(1.05) translateY(-44px) rotate(360deg) translateZ(0);
-	}
-  }
-  
-  @keyframes rotate {
-	to {
-	  transform: scale(1.05) translateY(-44px) rotate(360deg) translateZ(0);
-	}
-  }
 
+	
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+	  <script>
+		
+const randomInRange = (min, max) =>
+	Math.floor(
+		Math.random() * (Math.floor(max) - Math.ceil(min) + 1) + Math.ceil(min)
+	)
+
+// Used the randomize the order of the panels. Remove for development.
+const PANEL_CONTAINER = document.querySelector('ul')
+const PANELS = [...document.querySelectorAll('li')].sort((a, b) => {
+	if (
+		a.innerText === 'Scroll for cascading text effects!' ||
+		b.innerText === 'Scroll for cascading text effects!' ||
+		a.innerText === "Thanks for scrollin'!" ||
+		b.innerText === "Thanks for scrollin'!"
+	) {
+		return 0
+	}
+	return Math.random() > 0.5 ? -1 : 1
+})
+PANEL_CONTAINER.innerHTML = ''
+PANELS.forEach((panel) => PANEL_CONTAINER.appendChild(panel))
+
+Splitting()
+
+ScrollOut({
+	targets: ['.word', '.falling', '.scrolled', '.glare', '.stream'],
+	scrollingElement: 'ul',
+})
+
+// Set of characters we can use to glitch through
+const GLITCH_CHARS = '`¡™£¢∞§¶•ªº–≠åß∂ƒ©˙∆˚¬…æ≈ç√∫˜µ≤≥÷/?░▒▓<>/'.split('')
+// Loop through our Splitting results and apply CSS variables.
+// The results contain an Array of spans that are the characters.
+const CHARS = document.querySelectorAll('.glitchy .char')
+for (let c = 0; c < CHARS.length; c++) {
+  // We are going to inline 10 CSS variables
+  for (let g = 0; g < 10; g++) {
+    CHARS[c].style.setProperty(
+      `--char-${g}`,
+      `"${GLITCH_CHARS[Math.floor(Math.random() * GLITCH_CHARS.length)]}"`
+    )
+  }
+}
+
+// Assign random position for random chars
+const RANDOM_CHARS = document.querySelectorAll('.random .char')
+RANDOM_CHARS.forEach((char) => {
+	char.style.setProperty('--x', randomInRange(-1000, 1000))
+	char.style.setProperty('--y', randomInRange(-1000, 1000))
+})
+
+// Assign indexes to "Expanding"
+const EXPANDING_WORDS = document.querySelectorAll('.expanding .word')
+EXPANDING_WORDS.forEach((word, index) => {
+	const exp = (index % 2) + 1
+	if (index !== 0) {
+		word.style.setProperty('--expansion-position', index > 2.5 ? exp : exp * -1)
+		word.style.setProperty('--expansion-index', exp)
+	}
+})
+
+
+
+	  </script>
+</body>
+</html>
