@@ -1804,6 +1804,8 @@ line-height: normal;
   width: 80%;
   position: relative;
   margin: auto;
+top: -40px;
+z-index: 1000;
 }
 .announcebox {
   border-radius: 15px;

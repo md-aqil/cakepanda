@@ -251,7 +251,7 @@
     <section class="fade-top">
    
     <div class="container">
-      <div class="ann-sec">
+      <div class="ann-sec fade-in" data-scroll="">
         <div class="index1 announcebox bg-yellow">
           <div class="vlist">
             <div style="display: flex;
@@ -271,8 +271,9 @@
         </div>
         <ul class="brand-info">
           <li style="border-right: 1px solid;
-          padding-right: 30px;">Building On<img src="./public/bnb-chain-full-binance-smart-chain-logo.png" alt=""></li>
-          <li>Asset Reserve With<img src="./public/panlogo-white.png" alt="" style="width: 180px;"></li>
+          padding-right: 30px;" class="fade-in delay_2" data-scroll="">Building On<img src="./public/bnb-chain-full-binance-smart-chain-logo.png" alt=""></li>
+
+          <li class="fade-in delay_3" data-scroll="">Asset Reserve With<img src="./public/panlogo-white.png" alt="" style="width: 180px;"></li>
         </ul>
       </div>
       
@@ -281,7 +282,7 @@
   </section>
 
 
-  <section class="bg-theme spacer ">
+  <section class="bg-theme spacer mt-5">
 
     <section class="por text-center">
       <div class="container whitelist-container">
@@ -363,21 +364,24 @@
                         <li><span id="minutes"></span></li>
                         <li><span id="seconds"></span></li>
                       </ul>
-                      <div class="text-center ">
-                        <p class="mt-2 mb-2">
-                          <button class="glow-button">
-                            <span>Grab your white list</span>
-                          </button>
-
-                        </p>
-                        <p class="mb-3">
-                      <a href="" class="link-text" style="color: #059825;">View Whitelisted List</a>
-            
-                        </p>
-                      </div>
+                      
                     </div>
                   </div>
 
+                  <div class="text-center ">
+                    <p class="mt-2 mb-2">
+                      <button class="glow-button">
+                        <span>Grab your white list</span>
+                      </button>
+  
+                    </p>
+                    <p class="mb-3">
+                  <a href="" class="link-text" style="color: #059825;">View Whitelisted List</a>
+        
+                    </p>
+                  </div>
+
+                 
                   <ul class="infol mb-5" style="margin-left: 100px;">
                     <h2 class="mb-1">Ways to get a WL</h2>
                     <li>Participate in our WL campaign on Galxe </li>
@@ -1349,6 +1353,8 @@ gsap.to(".parallax", {
 </script>
 
 <script>
+
+  
   var swiper = new Swiper(".mySwiperPast", {
     effect: "cards",
     grabCursor: true,
@@ -1363,6 +1369,51 @@ gsap.to(".parallax", {
 ScrollOut({
 	targets: ['.word', '.falling', '.scrolled', '.glare', '.stream'],
 })
+
+const generateGlowButtons = () => {
+  document.querySelectorAll(".glow-button").forEach((button) => {
+      let gradientElem = button.querySelector('.gradient');
+      
+      if(!gradientElem) {
+          gradientElem = document.createElement("div");
+          gradientElem.classList.add("gradient");
+
+          button.appendChild(gradientElem);
+      }
+
+      button.addEventListener("pointermove", (e) => {
+          const rect = button.getBoundingClientRect();
+
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          gsap.to(button, {
+              "--pointer-x": `${x}px`,
+              "--pointer-y": `${y}px`,
+              duration: 0.6,
+          });
+
+          gsap.to(button, {
+              "--button-glow": chroma
+              .mix(
+                  getComputedStyle(button)
+                  .getPropertyValue("--button-glow-start")
+                  .trim(),
+                  getComputedStyle(button).getPropertyValue("--button-glow-end").trim(),
+                  x / rect.width
+              )
+              .hex(),
+              duration: 0.2,
+          });
+      });
+  });
+}
+
+// Set variables on loaded
+document.addEventListener('DOMContentLoaded', generateGlowButtons);
+
+// Set variables on resize
+window.addEventListener('resize', generateGlowButtons);
 </script>
   </body>
 </html>
