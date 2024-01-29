@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./meme-nation.css">
+    <link rel="stylesheet" href="https://github.hubspot.com/odometer/themes/odometer-theme-minimal.css">
+
+    
+	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <link rel="stylesheet" href="./starter.css">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./css/expand.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bai Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Shojumaru:wght@400&display=swap"
+    />
+   
+  </head>
+  <body style=" background: #285028;">
+    <canvas id="particleCanvas" style="position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh !important;"></canvas>
+    <div class="transparent-kung-fu-panda-png-group panda1-box " style="position: 1; z-index: 1; text-align: right;">
+      <img src="./public/panda-green.png"  class="panda-1" style="width: 450px;" alt="">
+            
+          </div>
+
+   
+          <!-- Hero Section: -->
+
+
+          <section class="cake-film">
+            <img class="leonardo-diffusion-xl-panda-la-icon" alt="" src="./public/hero-bg.jpg" />
+            <div class="frame-group hero-group">
+                <div class="frame-container hero-container">
+                    <div class="community-marketplace-parent hero-left">
+                        <div class="community-marketplace fade-in delay_2" data-scroll>
+                            Moda mortal + Ganancias pasivas de por vida
+                        </div>
+                        <div class="a-platform-where-container fade-in delay_2" data-scroll>
+                            <span>Una comunidad de memes que otorga a los titulares de tokens un ingreso pasivo de por vida <span style="color: #efd912; font-weight: bold;">a través del poder de DeFi</span>.</span>
+                        </div>
+                        <div class="mingcutecoin-fill-group btn-theme  mt-3 fade-in delay_4" data-scroll="">
+                            <img class="mingcutecoin-fill-icon" alt="" src="./public/mingcutecoinfill.svg" />
+                            <div href="" class="read-whitepaper" style="color:#333">Compra ahora</div>
+                        </div>
+                        <div class="rectangle-parent fade-in delay_5" data-scroll="">
+                            <div class="frame-div">
+                                <div class="frame-parent1">
+                                    <div class="wrapper">
+                                        <b class="b">00</b>
+                                    </div>
+                                    <div class="cake-vault">Cake Vault</div>
+                                </div>
+                                <div class="frame-child"></div>
+                                <div class="frame-parent1">
+                                    <div class="wrapper">
+                                        <b class="b">$CAPA</b>
+                                    </div>
+                                    <div class="token-name">Nombre del Token</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <img class="store-bg" alt="" src="./public/store-lume.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="rectangle-group">
+                <header>
+                    <nav class="cake-navbar">
+                        <ul class="menu-item">
+                            <li>
+                                <a title="Próximamente" class="page" href="#about">Acerca de</a>
+                            </li>
+                            <li>
+                                <a title="Próximamente" href="#stats" class="page">Estadísticas</a>
+                            </li>
+                            <li>
+                                <a title="Próximamente" href="#tokenomics" class="page">Economía de tokens</a>
+                            </li>
+                            <li>
+                                <a title="Próximamente" href="#roadmap" class="page">Hoja de ruta</a>
+                            </li>
+                            <li>
+                                <a href="#blog" class="page">Blog</a>
+                            </li>
+                            <li>
+                                <a title="Próximamente" class="page" href="#faqs">Preguntas frecuentes</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://cakepanda.gitbook.io/">Documentación</a>
+                            </li>
+                            <div class="button-nav show-mobile">
+                                <a href="https://app.cakepanda.io/" class="launch-app-parent" target="_blank">
+                                    <div class="launch-app">Iniciar aplicación</div>
+                                    <img class="material-symbolsrocket-launch-icon" alt="" src="./public/materialsymbolsrocketlaunch.svg" />
+                                </a>
+                            </div>
+                        </ul>
+                        <div class="cake-panda">
+                            <img src="./public/CAKEPANDA_LOGO.png" alt="">
+                        </div>
+                        <img src="./public/menu.svg" class="menu-icon nav-toggle" alt="">
+                        <div class="button-nav hide-mobile">
+                            <a href="https://app.cakepanda.io/" class="launch-app-parent" target="_blank">
+                                <div class="launch-app">Iniciar aplicación</div>
+                                <img class="material-symbolsrocket-launch-icon" alt="" src="./public/materialsymbolsrocketlaunch.svg" />
+                            </a>
+                        </div>
+                        <div class="dropdown">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                Español</span>
+                            <div class="dropdown-content">
+                                <a href="./index.html" target="_blank">English</a>
+                                <a href="./lang-tr.html" target="_blank">Turkish</a>
+                                <a href="./lang-cn.html" target="_blank">Chinese</a>
+                                <a href="./lang-es.html" target="_blank">Spanish</a>
+                                
+
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </section>
+
+        
+        <section class="spacer capa-section" id="about">
+            <div class="container spacer">
+                <div class="flex-box">
+                    <div class="flex-col index1">
+                        <div class="vector-group group">
+                            <div aria-hidden="true" class="reflective" data-splitting="">
+                                <span>$CAPA</span>
+                                <span>$CAPA</span>
+                            </div>
+                            <div class="a-hyper-deflationary-and-container mt-7">
+                                <i>A</i>
+                                <i class="hyper-deflationary-and-elastic">Token con hiperdeflación y suministro elástico</i>
+                                <i>con mecanismos únicos de reserva y recompensa, adoptando una política automática de moneda mixta.</i>
+                            </div>
+                        </div>
+                        <div class="mingcutecoin-fill-parent fade-in delay_4" data-scroll="">
+                            <img class="mingcutecoin-fill-icon" alt="" src="./public/mingcutecoinfill.svg" />
+                            <a href="https://cakepanda.gitbook.io" class="read-whitepaper" style="color: #333;">Leer el Libro Blanco</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fade-top">
+            <div class="container">
+                <div class="ann-sec fade-in" data-scroll="">
+                    <div class="index1 announcebox bg-yellow">
+                        <div class="vlist">
+                            <div style="display: flex; align-items: center; gap: 20px;">
+                                <img style="width: 80px;" src="./public/cmc.png" alt="">
+                                <h1 class="" style="font-size: 24px; margin: 0; line-height: 1;">El token CAPA ya está listado en Coinmarketcap</h1>
+                            </div>
+                            <a href="https://coinmarketcap.com/currencies/cake-panda/" class="green-btn" target="_blank">Verificar</a>
+                        </div>
+                    </div>
+                    <ul class="brand-info">
+                        <li style="border-right: 1px solid; padding-right: 30px;" class="fade-in delay_2" data-scroll="">Construyendo en <img src="./public/bnb-chain-full-binance-smart-chain-logo.png" alt=""></li>
+                        <li class="fade-in delay_3" data-scroll="">Reserva de activos utilizando <img src="./public/panlogo-white.png" alt="" style="width: 180px;"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="bg-theme spacer mt-5">
+            <section class="por text-center">
+                <div class="container whitelist-container">
+                    <h2 class="text-white the-title mb-1 mexiwave" data-scroll data-splitting="">
+                        Lista blanca de preventa
+                    </h2>
+                    <ul class="border-list">
+                        <li>
+                            Las billeteras en la lista blanca tendrán acceso prioritario en Pinksale.
+                        </li>
+                        <li>
+                            Hay dos capas de lista blanca. Capa 1 y Capa 2.
+                        </li>
+                        <li>
+                            La lista blanca de la Capa 1 obtendrá exclusividad para comprar la preventa en los primeros minutos después del lanzamiento.
+                        </li>
+                        <li>
+                            Después de 3 minutos, la preventa estará abierta para todos.
+                        </li>
+                    </ul>
+                    <div class="spots-sec mt-5 mb-5">
+                        <span class="st">Cupo de lista blanca disponible</span>
+                    </div>
+                    <div class="double-box index1">
+                        <img src="./public/c-coin.png" class="hidden-mobile" style="position: absolute;
+                        left: 0;
+                        top: -80px;" data-scroll data-scroll-parallax alt="">
+                        <div aria-hidden="true" class="carousel w3d" data-splitting="" style="font-size: 30px;
+                        color: var(--color-white);
+                        font-family: var(--font-shojumaru);
+                        position: absolute;
+                        top: -50px;
+                        right: 30px;">
+                            $CAPA.
+                        </div>
+                        <img src="./public/c-coin.png" style="position: absolute;
+                        right: 0;
+                        bottom: -80px;" data-scroll data-scroll-parallax alt="">
+                        <div class="ftr">
+                            <h4 class="float-label odometer" style="position: static;" id="odometer">1000</h4>
+                            <span class="st" style="color: #285028;">Cupo total de lista blanca <b>1000</b></span>
+                        </div>
+                        <div class="stats-content ftr-stats">
+                            <div class="row" style="align-items: center;">
+                                <div class="col text-center" style="flex-basis: 35%;">
+                                    <img width="100%" class="ctp1" src="./public/capa-token1.png" style="margin-left: -50px;" alt="">
+                                </div>
+                                <div class="col" style="width: 65%;">
+                                    <div class="countdown-section">
+                                        <div id="countdown">
+                                            <ul>
+                                                <li><span id="days"></span></li>
+                                                <li><span id="hours"></span></li>
+                                                <li><span id="minutes"></span></li>
+                                                <li><span id="seconds"></span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text-center ">
+                                        <p class="mt-2 mb-2">
+                                            <a href="https://galxe.com/3qvrQH9dimxbo4pz3k3NJV" class="glow-button" style="display: inline-block; text-decoration: none;">
+                                                <span>Obtener tu lista blanca</span>
+                                            </a>
+                                        </p>
+                                        <p class="mb-3">
+                                            <a href="https://docs.google.com/spreadsheets/d/1xxTFOyE5fmeD6j8yXYmSvaApZTN3crnwwR11a2-7wh8/edit?usp=sharing" class="link-text" style="color: #059825;">Ver lista blanca</a>
+                                        </p>
+                                    </div>
+                                    <ul class="infol mb-5" style="margin-left: 100px;">
+                                        <h2 class="mb-1">Formas de obtener la lista blanca</h2>
+                                        <li>Participar en nuestras actividades de WL en Galxe</li>
+                                        <li>Participar en las actividades de Testnet en Galxe</li>
+                                        <li>Ganar la lista blanca en nuestras AMA en otras comunidades</li>
+                                        <li>Los líderes de opinión, los administradores de comunidades populares y los poseedores de CAKE/Monsta/BNB pueden solicitar la lista blanca en nuestro chat de Telegram.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="bg-theme" style="overflow: hidden;">
+
+            <section class="memes-section spacer">
+                <h1 class="meme" id="meme1">
+                    <img src="./public/This or That 1.png" width="200" alt="">
+                </h1>
+                <h1 class="meme" id="meme2">
+                    <img src="./public/Love It 1.png" width="150" alt="">
+                </h1>
+                <h1 class="meme" id="meme3">
+                    <img src="./public/Vibes 1.png" width="200" alt="">
+                </h1>
+                <div class="container">
+        
+                    <div class="flex-box" style="align-items: flex-end;">
+                        <div class="flex-col text-center lm">
+                            <div class="meme-box">
+                                <p>
+                                    Cuando finalmente encuentras algo
+                                    después de buscar mucho en la cocina
+                                </p>
+                                <iframe src="https://giphy.com/embed/10HH4ySgNKCzVm" width="480" height="230" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+                            </div>
+                            <h4 class="rh">
+                                Memes Mortales
+                            </h4>
+                        </div>
+                        <div class="flex-col text-center">
+                            <img style="width: 70%;" src="./public/lifetimeearning.png" alt="">
+                            <h4 class="rh">
+                                Ingresos de por vida
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="panda-para" style="margin-top: 30px;">
+                        <p class="para">
+                            CAKE PANDA muestra aquí el gran poder de los memes en la vida humana. Incluso Elon Musk utiliza memes para conectarse con millones de seguidores. PANDA es el token MemeFi (Meme + DeFi) más grande del mundo, ya que los perros y gatos ya pasaron de moda. Bienvenido a PANDAland.
+                        </p>
+                        <p class="para">
+                            Para brindarte algo de diversión en el viaje, descubrirás juegos en cadena, NFT Play2Earn y otras funciones con recompensas, permitiéndote ganar dinero en el primer ecosistema DeFi verdaderamente sostenible del mundo, mientras el protocolo trabaja para ti. CAPA reemplazará a todos los demás tokens de memes en el mercado.
+                        </p>
+                    </div>
+        
+                </div>
+        
+            </section>
+        
+            <section class="stats-section por text-center spacer" id="stats">
+                <div class="container spacer mt-6">
+                    <div class="double-box">
+                        <h4 class="float-label">Estadísticas</h4>
+                        <div class="stats-content">
+                            <ul>
+                                <li>
+                                    <span>Precio</span>
+                                    Pendiente
+                                </li>
+                                <li>
+                                    <span>Suministro Total</span>
+                                    1,000,000,000
+                                </li>
+                                <li>
+                                    <span>Liquidez</span>
+                                    Pendiente
+                                </li>
+                            </ul>
+                            <img class="stat-panda panda-anim" src="./public/panda-green.png" alt="">
+                            <ul style="margin-left: 50px;">
+                                <li>
+                                    <span>Capitalización de Mercado</span>
+                                    Pendiente
+                                </li>
+                                <li>
+                                    <span>Titulares</span>
+                                    0
+                                </li>
+                                <li>
+                                    <span>Cantidad Quemada</span>
+                                    0
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="bg-theme spacer" id="tokenomics">
+                <div class="container">
+                    <h2 class="text-white the-title text-center mb-5">
+                        Economía del Token
+                    </h2>
+        
+                    <div class="double-box index1">
+                        <div class="stats-content double-conent">
+                            <ul>
+                                <li>
+                                    <span>Ronda Privada</span>
+                                    14.0%
+                                </li>
+        
+                                <li>
+                                    <span>Ronda Pública</span>
+                                    40.0%
+                                </li>
+                                <li>
+                                    <span>Liquidez DEX</span>
+                                    19.4%
+                                </li>
+        
+        
+                                <li>
+                                    <span>Equipo</span>
+                                    8%
+                                </li>
+                            </ul>
+        
+                            <ul>
+        
+                                <li>
+                                    <span>Airdrop</span>
+                                    1.6%
+                                </li>
+        
+                                <li>
+                                    <span>Crecimiento de la Comunidad</span>
+                                    7%
+                                </li>
+                                <li>
+                                    <span>Crecimiento de la Liquidez</span>
+                                    10%
+                                </li>
+        
+                            </ul>
+        
+                            <ul class="lbt">
+        
+                                <li>
+                                    <div class="label-box">
+                                        Símbolo del Token
+                                        <b>CAPA</b>
+                                    </div>
+                                </li>
+        
+                                <li>
+                                    <div class="label-box invert">
+                                        Tipo de Token
+                                        <b>BEP20</b>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="tp">
+                                        Cantidad Inicial de Suministro Circulante en TGE <b>42.2%</b>
+                                    </p>
+                                    <p class="tp">
+                                        Valor de Mercado Inicial en TGE <b>Pendiente</b>
+                                    </p>
+                                </li>
+        
+                            </ul>
+                        </div>
+                    </div>
+        
+                </div>
+            </section>
+        
+            <section class="spacer index1" id="tax">
+                <div class="dual-text-box text-center text-white">
+                    <h2 class="the-title">
+                        Economía de la Nación de Memes de Cake Panda
+                    </h2>
+                    <h4 class="subheading">Cuando los titulares realizan una transacción de 100,000 tokens Panda</h4>
+                </div>
+        
+                <div class="container text-center">
+                    <div class="box-title">
+                        <div class="tax-6-container">
+                            <b> Impuestos = 6% </b>
+                            <span class="tokens3">(6000 tokens)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="meme-nation-section">
+                    <div class="card-list">
+                        <div class="style-card-box">
+                            <div class="img-parent">
+                                <div class="img-box-parent">
+                                    <div class="img-box">
+                                        <img class="leonardo-diffusion-xl-tokens-b-icon" alt=""
+                                            src="./public/Leonardo_Diffusion_XL_Tokens_burn_blockchain_concept_with_a_st_2.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="style-card-box-inner">
+                                <div class="dual-text-wrapper">
+                                    <div class="dual-text">
+                                        <div class="tokens">
+                                            <b>2% </b>
+                                            <span>(2000 tokens)</span>
+                                        </div>
+                                        <div class="burn">Quemar</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="style-card-box center-card">
+                            <div class="img-parent">
+                                <div class="img-box-parent">
+                                    <div class="img-box">
+                                        <img class="leonardo-diffusion-xl-token-st-icon" alt=""
+                                            src="./public/Leonardo_Diffusion_XL_token_storing_in_box_blockchain_concept_2.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="style-card-box-inner">
+                                <div class="dual-text-wrapper">
+                                    <div class="dual-text">
+                                        <div class="tokens">
+                                            <b>2% </b>
+                                            <span>(2000 tokens)</span>
+                                        </div>
+                                        <div class="burn">
+                                            <p class="panda-tokens-get">Tokens PANDA convertidos en tokens CAKE</p>
+                                            <p class="panda-tokens-get">y almacenados en el fondo de recompensas del titular</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="style-card-box">
+                            <div class="img-parent">
+                                <div class="img-box-parent">
+                                    <div class="img-box">
+                                        <img class="leonardo-diffusion-xl-token-st-icon" alt="" src="./public/box-open.jpg" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="style-card-box-inner">
+                                <div class="dual-text-wrapper">
+                                    <div class="dual-text">
+                                        <div class="tokens">
+                                            <b>2% </b>
+                                            <span>(2000 tokens)</span>
+                                        </div>
+                                        <div class="burn">
+                                            <p class="1000 CAPA tokens used for LP ">
+                                                1000 tokens CAPA convertidos en LP &
+                                                1000 tokens CAPA utilizados para marketing
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+
+        <section class="stats-section por text-center bg-theme spacer" id="roadmap">
+            <h2 class="text-white the-title mb-5">
+              Roadmap
+            </h2>
+          
+            <section class="exp-section index1">
+              <div class="expand bg-theme add-scroll">
+                <article class="def-show">
+                  <span class="tag">1</span>
+                  <h4>Genesis</h4>
+                </article>
+          
+                <ul class="def-hide">
+                  <li>Concept Birth <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+                  <li>Research <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+                  <li>Protocol Building <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+                  <li>Protocol Testing <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+                  <li>Testnet Launch <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+                  <li>Website <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+                  <li>Whitepaper <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+                  <li>Private Sale <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+                  <li>IDO <span>TBD</span></li>
+                  <li>Mainnet Launch <span>TBD</span></li>
+                </ul>
+              </div>
+          
+              <div class="bg-yellow add-scroll">
+                <article class="def-show">
+                  <span class="tag">2</span>
+                  <h4>Product</h4>
+                </article>
+          
+                <ul class="def-hide">
+                  <li>To be added products <span>Spell</span></li>
+                  <li>ITAX <span>2</span></li>
+                  <li>SAFEKEEP <span>3</span></li>
+                  <li>Dashboard Recommendations <span>5</span></li>
+                  <li>Governance <span>9</span></li>
+                  <li>UI/UX Improvements <span>12</span></li>
+                  <li>OPTION GAME <span>16</span> </li>
+                  <li>User Dashboard <span>21</span></li>
+                  <li>Fear and Greed Dashboard <span>24</span> </li>
+                </ul>
+              </div>
+          
+              <div class="bg-theme add-scroll">
+                <article class="def-show">
+                  <span class="tag">3</span>
+                  <h4>Education</h4>
+                </article>
+          
+                <ul class="def-hide">
+                  <li>Education Advocacy <span>Spell</span></li>
+                  <li>Education Events <span>1</span></li>
+                  <li>Community AMA <span>2</span></li>
+                  <li>Guides <span>4</span></li>
+                  <li>Tutorials <span>6</span></li>
+                  <li>Webinars <span>8</span></li>
+                  <li>Advanced Topics <span>13</span></li>
+                  <li>OPTION GAME <span>15</span></li>
+                </ul>
+              </div>
+          
+              <div class="bg-yellow add-scroll">
+                <article class="def-show">
+                  <span class="tag">4</span>
+                  <h4>Marketing</h4>
+                </article>
+          
+                <ul class="def-hide">
+                  <li>CMC <span>SPELL 0</span></li>
+                  <li>CG <span>SPELL 1</span></li>
+                  <li>Other Price Tracking Websites <span>SPELL 2</span></li>
+                  <li>Community Contests <span>SPELL 3</span></li>
+                  <li>Anniversary Celebrations <span>SPELL 24</span></li>
+          
+                  <li>Crazy Meme Merchandise <span>TBD</span></li>
+                  <li>Crazy Meme Influencer Collaborations <span>TBD</span></li>
+                  <li>DeFi Influencer Collaborations <span>TBD</span></li>
+          
+                  <li>Community Coverage</li>
+                  <li>500 <span>TBU</span></li>
+                  <li>5000 <span>TBU</span></li>
+                  <li>10000 <span>TBU</span></li>
+                  <li>10000 <span>TBU</span></li>
+                  <li>25000 <span>TBU</span></li>
+                </ul>
+              </div>
+          
+              <div class="bg-theme add-scroll">
+                <article class="def-show">
+                  <span class="tag">5</span>
+                  <h4>Citizens</h4>
+                </article>
+          
+                <ul class="def-hide">
+                  <li>Recommendations <span>SPELL 3</span></li>
+                  <li>Multi-language Documentation <span>SPELL 4</span></li>
+                  <li>Multi-language Groups <span>SPELL 5</span></li>
+                  <li>Holders</li>
+                  <li>500 <span>TBU</span></li>
+                  <li>1000 <span>TBU</span></li>
+                  <li>2500 <span>TBU</span></li>
+                  <li>5000 <span>TBU</span></li>
+                  <li>10000 <span>TBU</span></li>
+                  <li>20000 <span>TBU</span></li>
+                </ul>
+              </div>
+          
+              <div class="bg-yellow add-scroll">
+                <article class="def-show">
+                  <span class="tag">6</span>
+                  <h4>Assets</h4>
+                </article>
+          
+                <ul class="def-hide">
+                  <li>Liquidity</li>
+                  <li>500K <span>TBU</span></li>
+                  <li>1M <span>TBU</span></li>
+                  <li>2M <span>TBU</span></li>
+                  <li>5M <span>TBU</span></li>
+                  <li>Insurance Pool Rewards</li>
+                  <li>250K <span>TBU</span></li>
+                  <li>1M <span>TBU</span></li>
+                  <li>5M <span>TBU</span></li>
+                  <li>Market Cap</li>
+                  <li>5M <span>TBU</span></li>
+                  <li>100M <span>TBU</span></li>
+                  <li>250M <span>TBU</span></li>
+                  <li>500M <span>TBU</span></li>
+                  <li>1000M <span>TBU</span></li>
+                </ul>
+              </div>
+          
+            </section>
+          
+            <p class="text-white mt-4" style="margin-top: 20px;">
+              TBU = To Be Updated<br>
+              TBD = To Be Determined
+            </p>
+          </section>
+          
+          <section class="spacer bg-curve stats-section" id="blog">
+            <div class="container">
+              <div class="dual-text-box  text-center index1">
+                <h2 class="the-title mt-8">
+                  Blog
+                </h2>
+                <h4 class="subheading">
+                  <a target="_blank" style="color: #007aff;" href="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30">Read all blogs</a>
+                </h4>
+              </div>
+          
+              <div class="news-box index1">
+                <div class="news-block text-center">
+                  <iframe src="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30/1pzeOvcoZhKwqwCLsNrm2ekKTtM1msaWewZxIIIYWGI" width="100%" frameborder="0" scrolling="no">
+                  </iframe>
+                  <a class="btn-green" href="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30/1pzeOvcoZhKwqwCLsNrm2ekKTtM1msaWewZxIIIYWGI" target="_blank">Read Blog</a>
+                </div>
+          
+                <div class="news-block text-center hide-mobile">
+                  <iframe src="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30/ctP5SMXcOS6Jy2UyjculNfY6neKvoqL6bEbH_zAbU1U" width="100%" frameborder="0" scrolling="no">
+                  </iframe>
+                  <a class="btn-green" href="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30/ctP5SMXcOS6Jy2UyjculNfY6neKvoqL6bEbH_zAbU1U" target="_blank">Read Blog</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="spacer index1" id="faqs">
+            <h2 class="text-white the-title text-center">
+              Frequently Asked Questions
+            </h2>
+            <div class="container">
+          
+              <ul class="faq-list">
+                <li>
+                  <h4 class="faq-heading">Which CAPA transactions are subject to the 6% tax requirement?</h4>
+                  <p class="read faq-text">
+                    All CAPA token transactions conducted by users, such as buying, selling, or transferring, are subject to the fixed 6% tax requirement. In fact, this tax is utilized for the benefit of CAPA token holders, rewarding them in various ways.
+                  </p>
+                </li>
+                <li>
+                  <h4 class="faq-heading">What are the benefits of paying a 6% tax for holders?</h4>
+                  <p class="read faq-text">
+                    The collected tax is evenly divided into three equal parts, each serving a different purpose. One-third is used for token burning, increasing scarcity and intrinsic value. Another one-third is converted into $CAKE tokens, forming a reward pool for loyal CAPA token holders. The final one-third is allocated to the CAPA Treasury for crucial activities, such as enhancing liquidity and strategic marketing initiatives.
+                  </p>
+                </li>
+                <li>
+                  <h4 class="faq-heading">What is CAPA Meme Nation?</h4>
+                  <p class="read faq-text">
+                    CAPA is not just another token; it is the currency of CAPA Meme Nation, bringing together the vibrant Meme world, the efficiency of blockchain technology, and the spirit of community collaboration.
+                  </p>
+                </li>
+                <li>
+                  <h4 class="faq-heading">How do I earn rewards from the CAPA protocol?</h4>
+                  <p class="read faq-text">
+                    The CAPA protocol distributes rewards to token holders every two weeks and annually. To receive these rewards, you only need to hold CAPA tokens and stay active in the ecosystem, following the 15-day tax compliance requirement. Additionally, there are other triggering events and opportunities in Panda Thunder to earn rewards.
+                  </p>
+                </li>
+                <li>
+                  <h4 class="faq-heading">How do I participate in CAPA Meme Nation?</h4>
+                  <p class="read faq-text">
+                    To be an active participant in CAPA Meme Nation, you simply need to hold CAPA tokens in your wallet. There's no need to store the tokens outside your wallet; the protocol reads your token activities from your wallet.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <footer class="index1">
+            <div class="container">
+              <div class="footer-list" style="display: flex;">
+                <div>
+                  <div class="fsys">
+                    <img width="80" src="./public/capa-token1.png" alt="">
+          
+                    <ul class="icon-list">
+                      <li><a href="https://t.me/Cakepandaio" target="_blank">
+                          <img src="./public/telegram.png" alt="">
+                        </a></li>
+                      <li><a href="https://twitter.com/cakepandaio" target="_blank">
+                          <img src="./public/twitter.png" alt="">
+                        </a></li>
+                      <li><a href="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30" target="_blank">
+                          <img src="./public/newm.png" alt="">
+                        </a></li>
+          
+                    </ul>
+          
+                  </div>
+          
+                  <p>
+                    Meme Nation, endowing lifelong passiv income
+          
+                  </p>
+                </div>
+          
+                <ul class="item-list">
+          
+                  <li><a href="https://cakepanda.gitbook.io/capa/" target="_blank">Whitepaper</a></li>
+                  <li><a href="https://coinmarketcap.com/currencies/cake-panda" target="_blank">Coinmarketcap</a></li>
+                  <li><a href="https://app.cakepanda.io/" target="_blank">Launch App</a></li>
+          
+                  <li><a href="https://app.cakepanda.io/referral" translate="_blank">Affiliate Program</a></li>
+                </ul>
+          
+              </div>
+            </div>
+          
+            <a class="tele-widget" href="https://t.me/cakepandaio" target="_blank" title="Join our Telegram">
+              <img src="./public/telegram.png" alt="Telegram">
+            </a>
+          
+          </footer>
+          
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+
+<script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+
+<script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+
+<script src="./scroll-out.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<script src="./js/controller.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z77JJT7MWR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z77JJT7MWR');
+</script>
+
+<script>
+
+$(function(){
+	$('.repeat').click(function(){
+    	var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+        	$(indicator).parent().addClass(classes);
+        }, 20);
+    });
+});
+
+
+$(document).ready(function () {
+        $('.nav-toggle').click(function () {
+            $('.menu-item').slideToggle('slow');
+        });
+    });
+
+  
+ScrollOut({
+	cssProps: {
+	  visibleY: true,
+	  viewportY: true
+	},
+  });
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Your existing script
+});
+</script>
+
+<script>
+
+
+gsap.to(".parallax", {
+  scrollTrigger: {
+    scrub: true
+  }, 
+  y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+  ease: "none"
+});
+
+
+
+</script>
+
+<script>
+
+  
+  var swiper = new Swiper(".mySwiperPast", {
+    effect: "cards",
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+  });
+
+  Splitting()
+
+ScrollOut({
+	targets: ['.word', '.falling', '.scrolled', '.glare', '.stream'],
+})
+
+const generateGlowButtons = () => {
+  document.querySelectorAll(".glow-button").forEach((button) => {
+      let gradientElem = button.querySelector('.gradient');
+      
+      if(!gradientElem) {
+          gradientElem = document.createElement("div");
+          gradientElem.classList.add("gradient");
+
+          button.appendChild(gradientElem);
+      }
+
+      button.addEventListener("pointermove", (e) => {
+          const rect = button.getBoundingClientRect();
+
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          gsap.to(button, {
+              "--pointer-x": `${x}px`,
+              "--pointer-y": `${y}px`,
+              duration: 0.6,
+          });
+
+          gsap.to(button, {
+              "--button-glow": chroma
+              .mix(
+                  getComputedStyle(button)
+                  .getPropertyValue("--button-glow-start")
+                  .trim(),
+                  getComputedStyle(button).getPropertyValue("--button-glow-end").trim(),
+                  x / rect.width
+              )
+              .hex(),
+              duration: 0.2,
+          });
+      });
+  });
+}
+
+// Set variables on loaded
+document.addEventListener('DOMContentLoaded', generateGlowButtons);
+
+// Set variables on resize
+window.addEventListener('resize', generateGlowButtons);
+</script>
+  </body>
+</html>

@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="CN.">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./meme-nation.css">
+    <link rel="stylesheet" href="https://github.hubspot.com/odometer/themes/odometer-theme-minimal.css">
+
+    
+	<link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <link rel="stylesheet" href="./starter.css">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./css/expand.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bai Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Shojumaru:wght@400&display=swap"
+    />
+   
+  </head>
+  <body style=" background: #285028;">
+    <canvas id="particleCanvas" style="position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh !important;"></canvas>
+    <div class="transparent-kung-fu-panda-png-group panda1-box " style="position: 1; z-index: 1; text-align: right;">
+      <img src="./public/panda-green.png"  class="panda-1" style="width: 450px;" alt="">
+            
+          </div>
+
+   
+          <div class="cake-film">
+            <img class="leonardo-diffusion-xl-panda-la-icon" alt="" src="./public/hero-bg.jpg" />
+            <div class="frame-group hero-group">
+                <div class="frame-container hero-container">
+                    <div class="community-marketplace-parent hero-left">
+                        <div class="community-marketplace fade-in delay_2" data-scroll>
+                            致命的模因 +
+                            终身赚取
+                        </div>
+                        <div class="a-platform-where-container fade-in delay_2" data-scroll>
+                            <span>一种模因社区，赋予代币持有者持续终身 passiv 收益的力量 <span style="color: #efd912; font-weight: bold;">通过 DeFi 的力量。</span> </span>
+                        </div>
+                        <div class="mingcutecoin-fill-group btn-theme  mt-3 fade-in delay_4" data-scroll="">
+                            <img class="mingcutecoin-fill-icon" alt="" src="./public/mingcutecoinfill.svg" />
+                            <div href="" class="read-whitepaper" style="color:#333">立即购买</div>
+                        </div>
+                        <div class="rectangle-parent fade-in delay_5" data-scroll="">
+                            <div class="frame-div">
+                                <div class="frame-parent1">
+                                    <div class="wrapper">
+                                        <b class="b">00</b>
+                                    </div>
+                                    <div class="cake-vault">Cake 保险库</div>
+                                </div>
+                                <div class="frame-child"></div>
+                                <div class="frame-parent1">
+                                    <div class="wrapper">
+                                        <b class="b">$CAPA</b>
+                                    </div>
+                                    <div class="token-name">代币名称</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <img class="store-bg" alt="" src="./public/store-lume.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="rectangle-group">
+                <header>
+                    <nav class="cake-navbar">
+                        <ul class="menu-item">
+                            <li>
+                                <a title="Coming Soon" class="page" href="#about">关于</a>
+                            </li>
+                            <li>
+                                <a title="Coming Soon" href="#stats" class="page">统计</a>
+                            </li>
+                            <li>
+                                <a title="Coming Soon" href="#tokenomics" class="page">通证经济</a>
+                            </li>
+                            <li>
+                                <a title="Coming Soon" href="#roadmap" class="page">路线图</a>
+                            </li>
+                            <li>
+                                <a href="#blog" class="page">博客</a>
+                            </li>
+                            <li>
+                                <a title="Coming Soon" class="page" href="#faqs">常见问题</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://cakepanda.gitbook.io/">文档</a>
+                            </li>
+                            <div class="button-nav show-mobile">
+                                <a href="https://app.cakepanda.io/" class="launch-app-parent" target="_blank">
+                                    <div class="launch-app">启动应用</div>
+                                    <img class="material-symbolsrocket-launch-icon" alt="" src="./public/materialsymbolsrocketlaunch.svg" />
+                                </a>
+                            </div>
+                        </ul>
+                        <div class="cake-panda">
+                            <img src="./public/CAKEPANDA_LOGO.png" alt="">
+                        </div>
+                        <img src="./public/menu.svg" class="menu-icon nav-toggle" alt="">
+                        <div class="button-nav hide-mobile">
+                            <a href="https://app.cakepanda.io/" class="launch-app-parent" target="_blank">
+                                <div class="launch-app">启动应用</div>
+                                <img class="material-symbolsrocket-launch-icon" alt="" src="./public/materialsymbolsrocketlaunch.svg" />
+                            </a>
+                        </div>
+                        <div class="dropdown">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                中文</span>
+                            <div class="dropdown-content">
+                              <a href="./index.html" target="_blank">English</a>
+                              <a href="./lang-tr.html" target="_blank">Turkish</a>
+                              <a href="./lang-cn.html" target="_blank">Chinese</a>
+                              <a href="./lang-es.html" target="_blank">Spanish</a>
+                              
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        
+   
+        <section class="spacer capa-section" id="about">
+          <div class="container spacer">
+              <div class="flex-box">
+                  <div class="flex-col index1">
+                      <div class="vector-group group">
+                          <div aria-hidden="true" class="reflective" data-splitting="">
+                              <span>$CAPA</span>
+                              <span>$CAPA</span>
+                          </div>
+                          <div class="a-hyper-deflationary-and-container mt-7">
+                              <i>A</i>
+                              <i class="hyper-deflationary-and-elastic">超通缩和弹性供应代币</i>
+                              <i>具有独特的储备和奖励机制，采用自动混合货币政策。</i>
+                          </div>
+                      </div>
+                      <div class="mingcutecoin-fill-parent fade-in delay_4" data-scroll="">
+                          <img class="mingcutecoin-fill-icon" alt="" src="./public/mingcutecoinfill.svg" />
+                          <a href="https://cakepanda.gitbook.io" class="read-whitepaper" style="color: #333;">阅读白皮书</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <section class="fade-top">
+          <div class="container">
+              <div class="ann-sec fade-in" data-scroll="">
+                  <div class="index1 announcebox bg-yellow">
+                      <div class="vlist">
+                          <div style="display: flex; align-items: center; gap: 20px;">
+                              <img style="width: 80px;" src="./public/cmc.png" alt="">
+                              <h1 class="" style="font-size: 24px; margin: 0; line-height: 1;">CAPA代币已预先上市在Coinmarketcap</h1>
+                          </div>
+                          <a href="https://coinmarketcap.com/currencies/cake-panda/" class="green-btn" target="_blank">验证</a>
+                      </div>
+                  </div>
+                  <ul class="brand-info">
+                      <li style="border-right: 1px solid; padding-right: 30px;" class="fade-in delay_2" data-scroll="">正在构建<img src="./public/bnb-chain-full-binance-smart-chain-logo.png" alt=""></li>
+                      <li class="fade-in delay_3" data-scroll="">资产储备使用<img src="./public/panlogo-white.png" alt="" style="width: 180px;"></li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+      <section class="bg-theme spacer mt-5">
+        <section class="por text-center">
+            <div class="container whitelist-container">
+                <h2 class="text-white the-title mb-1 mexiwave" data-scroll data-splitting="">
+                    预售白名单
+                </h2>
+                <ul class="border-list">
+                    <li>
+                        预售白名单的钱包将在 Pinksale 上获得优先访问权限。
+                    </li>
+                    <li>
+                        有两个白名单层。层1和层2。
+                    </li>
+                    <li>
+                        层1白名单将在启动后的前几分钟内独家获得购买预售的权限。
+                    </li>
+                    <li>
+                        3分钟后预售将对所有人开放。
+                    </li>
+                </ul>
+                <div class="spots-sec mt-5 mb-5">
+                    <span class="st">可用白名单名额</span>
+                </div>
+                <div class="double-box index1">
+                    <img src="./public/c-coin.png" class="hidden-mobile" style="position: absolute;
+                    left: 0;
+                    top: -80px;" data-scroll data-scroll-parallax alt="">
+                    <div aria-hidden="true" class="carousel w3d" data-splitting="" style="font-size: 30px;
+                    color: var(--color-white);
+                    font-family: var(--font-shojumaru);
+                    position: absolute;
+                    top: -50px;
+                    right: 30px;">
+                        $CAPA.
+                    </div>
+                    <img src="./public/c-coin.png" style="position: absolute;
+                    right: 0;
+                    bottom: -80px;" data-scroll data-scroll-parallax alt="">
+                    <div class="ftr">
+                        <h4 class="float-label odometer" style="position: static;" id="odometer">1000</h4>
+                        <span class="st" style="color: #285028;">总白名单名额 <b>1000</b></span>
+                    </div>
+                    <div class="stats-content ftr-stats">
+                        <div class="row" style="align-items: center;">
+                            <div class="col text-center" style="flex-basis: 35%;">
+                                <img width="100%" class="ctp1" src="./public/capa-token1.png" style="margin-left: -50px;" alt="">
+                            </div>
+                            <div class="col" style="width: 65%;">
+                                <div class="countdown-section">
+                                    <div id="countdown">
+                                        <ul>
+                                            <li><span id="days"></span></li>
+                                            <li><span id="hours"></span></li>
+                                            <li><span id="minutes"></span></li>
+                                            <li><span id="seconds"></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="text-center ">
+                                    <p class="mt-2 mb-2">
+                                        <a href="https://galxe.com/3qvrQH9dimxbo4pz3k3NJV" class="glow-button" style="display: inline-block; text-decoration: none;">
+                                            <span>获取您的白名单</span>
+                                        </a>
+                                    </p>
+                                    <p class="mb-3">
+                                        <a href="https://docs.google.com/spreadsheets/d/1xxTFOyE5fmeD6j8yXYmSvaApZTN3crnwwR11a2-7wh8/edit?usp=sharing" class="link-text" style="color: #059825;">查看白名单列表</a>
+                                    </p>
+                                </div>
+                                <ul class="infol mb-5" style="margin-left: 100px;">
+                                    <h2 class="mb-1">获得白名单的方式</h2>
+                                    <li>参与我们在 Galxe 上的 WL 活动</li>
+                                    <li>参与在 Galxe 上的 Testnet 活动</li>
+                                    <li>从我们在其他社区的 AMA 中赢得白名单</li>
+                                    <li>意见领袖、热门社区的管理员、CAKE/Monsta/BNB 持有者可以在我们的 Telegram 聊天中请求白名单。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <div class="bg-theme" style="overflow: hidden;">
+
+      <section class="memes-section spacer">
+          <h1 class="meme" id="meme1">
+              <img src="./public/This or That 1.png" width="200" alt="">
+          </h1>
+          <h1 class="meme" id="meme2">
+              <img src="./public/Love It 1.png" width="150" alt="">
+          </h1>
+          <h1 class="meme" id="meme3">
+              <img src="./public/Vibes 1.png" width="200" alt="">
+          </h1>
+          <div class="container">
+  
+              <div class="flex-box" style="align-items: flex-end;">
+                  <div class="flex-col text-center lm">
+                      <div class="meme-box">
+                          <p>
+                              当你终于找到了东西
+                              在厨房里寻找了很久之后
+                          </p>
+                          <iframe src="https://giphy.com/embed/10HH4ySgNKCzVm" width="480" height="230" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                      </div>
+                      <h4 class="rh">
+                          致命的表情包
+                      </h4>
+                  </div>
+                  <div class="flex-col text-center">
+                      <img style="width: 70%;" src="./public/lifetimeearning.png" alt="">
+                      <h4 class="rh">
+                          终身收益
+                      </h4>
+                  </div>
+              </div>
+              <div class="panda-para" style="margin-top: 30px;">
+                  <p class="para">
+                      CAKE PANDA 在这里展示了表情包在人类生活中的极大力量。甚至埃隆·马斯克也利用表情包与数百万追随者联系。PANDA 是世界上最大的 MemeFi 代币（Meme + DeFi），因为狗和猫已经过时了。欢迎来到PANDAland。
+                  </p>
+                  <p class="para">
+                      为了在旅途中给你一些乐趣，您将发现链上游戏、Play2Earn NFT 和其他有奖励的功能，让您在世界上第一个真正可持续的 DeFi 生态系统中赚钱，同时让协议为您工作。CAPA 将取代市场上所有其他表情包代币。
+                  </p>
+              </div>
+  
+          </div>
+  
+      </section>
+  
+      <!-- <section class="memes-section spacer-bottom">
+          <div class="container text-center">
+              <h2 class="text-white the-title">
+                  解释视频
+              </h2>
+              <img class="width100" src="./public/explainer-banner.png" alt="">
+          </div>
+      </section> -->
+  </div>
+  <section class="stats-section por text-center spacer" id="stats">
+    <div class="container spacer mt-6">
+        <div class="double-box">
+            <h4 class="float-label">统计</h4>
+            <div class="stats-content">
+                <ul>
+                    <li>
+                        <span>价格</span>
+                        待定
+                    </li>
+                    <li>
+                        <span>总供应量</span>
+                        1,000,000,000
+                    </li>
+                    <li>
+                        <span>流动性</span>
+                        待定
+                    </li>
+                </ul>
+                <img class="stat-panda panda-anim" src="./public/panda-green.png" alt="">
+                <ul style="margin-left: 50px;">
+                    <li>
+                        <span>市值</span>
+                        待定
+                    </li>
+                    <li>
+                        <span>持有者</span>
+                        0
+                    </li>
+                    <li>
+                        <span>销毁量</span>
+                        0
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-theme spacer" id="tokenomics">
+  <div class="container">
+      <h2 class="text-white the-title text-center mb-5">
+          代币经济学
+      </h2>
+
+      <div class="double-box index1">
+          <div class="stats-content double-conent">
+              <ul>
+                  <li>
+                      <span>私募轮</span>
+                      14.0%
+                  </li>
+
+                  <li>
+                      <span>公开轮</span>
+                      40.0%
+                  </li>
+                  <li>
+                      <span>DEX 流动性</span>
+                      19.4%
+                  </li>
+
+
+                  <li>
+                      <span>团队</span>
+                      8%
+                  </li>
+              </ul>
+
+              <ul>
+
+                  <li>
+                      <span>空投</span>
+                      1.6%
+                  </li>
+
+                  <li>
+                      <span>社区增长</span>
+                      7%
+                  </li>
+                  <li>
+                      <span>流动性增长</span>
+                      10%
+                  </li>
+
+              </ul>
+
+              <ul class="lbt">
+
+                  <li>
+                      <div class="label-box">
+                          代币符号
+                          <b>CAPA</b>
+                      </div>
+                  </li>
+
+                  <li>
+                      <div class="label-box invert">
+                          代币类型
+                          <b>BEP20</b>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="tp">
+                          TGE 时的初始流通供应量 <b>42.2%</b>
+                      </p>
+                      <p class="tp">
+                          TGE 时的初始市值 <b>待定</b>
+                      </p>
+                  </li>
+
+              </ul>
+          </div>
+      </div>
+
+  </div>
+</section>
+<section class="spacer index1" id="tax">
+  <div class="dual-text-box text-center text-white">
+      <h2 class="the-title">
+          Cake Panda Meme Nation Economy
+      </h2>
+      <h4 class="subheading">当持有者进行100,000 Panda代币的交易时</h4>
+  </div>
+
+  <div class="container text-center">
+      <div class="box-title">
+          <div class="tax-6-container">
+              <b> 税收 = 6% </b>
+              <span class="tokens3">(6000 代币)</span>
+          </div>
+      </div>
+  </div>
+
+  <div class="meme-nation-section">
+      <div class="card-list">
+          <div class="style-card-box">
+              <div class="img-parent">
+                  <div class="img-box-parent">
+                      <div class="img-box">
+                          <img class="leonardo-diffusion-xl-tokens-b-icon" alt=""
+                              src="./public/Leonardo_Diffusion_XL_Tokens_burn_blockchain_concept_with_a_st_2.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="style-card-box-inner">
+                  <div class="dual-text-wrapper">
+                      <div class="dual-text">
+                          <div class="tokens">
+                              <b>2% </b>
+                              <span>(2000 代币)</span>
+                          </div>
+                          <div class="burn">销毁</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="style-card-box center-card">
+              <div class="img-parent">
+                  <div class="img-box-parent">
+                      <div class="img-box">
+                          <img class="leonardo-diffusion-xl-token-st-icon" alt=""
+                              src="./public/Leonardo_Diffusion_XL_token_storing_in_box_blockchain_concept_2.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="style-card-box-inner">
+                  <div class="dual-text-wrapper">
+                      <div class="dual-text">
+                          <div class="tokens">
+                              <b>2% </b>
+                              <span>(2000 代币)</span>
+                          </div>
+                          <div class="burn">
+                              <p class="panda-tokens-get">PANDA 代币转换成 CAKE 代币</p>
+                              <p class="panda-tokens-get">并存储在持有者奖励池中</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="style-card-box">
+              <div class="img-parent">
+                  <div class="img-box-parent">
+                      <div class="img-box">
+                          <img class="leonardo-diffusion-xl-token-st-icon" alt="" src="./public/box-open.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="style-card-box-inner">
+                  <div class="dual-text-wrapper">
+                      <div class="dual-text">
+                          <div class="tokens">
+                              <b>2% </b>
+                              <span>(2000 代币)</span>
+                          </div>
+                          <div class="burn">
+                              <p class="1000 CAPA tokens used for LP ">
+                                  1000 CAPA 代币转换成 LP &
+                                  1000 CAPA 代币用于营销
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="stats-section por text-center bg-theme spacer" id="roadmap">
+  <h2 class="text-white the-title mb-5">
+      路线图
+  </h2>
+
+  <section class="exp-section index1">
+      <div class="expand bg-theme add-scroll">
+          <article class="def-show">
+              <span class="tag">1</span>
+              <h4>始创</h4>
+          </article>
+
+          <ul class="def-hide">
+              <li>概念诞生 <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+              <li>研究 <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+              <li>协议构建 <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+              <li>协议测试 <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+              <li>测试网启动<span><img src="./public/check.svg" width="26px" alt=""></span></li>
+              <li>网站 <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+              <li>白皮书 <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+              <li>私募 <span><img src="./public/check.svg" width="26px" alt=""></span></li>
+              <li>IDO <span>TBD</span></li>
+              <li>主网启动 <span>TBD</span></li>
+          </ul>
+      </div>
+
+      <div class="bg-yellow add-scroll">
+          <article class="def-show">
+              <span class="tag">2</span>
+              <h4>产品</h4>
+          </article>
+
+          <ul class="def-hide">
+              <li>待添加的产品 <span>Spell</span></li>
+              <li>ITAX <span>2</span></li>
+              <li>SAFEKEEP <span>3</span></li>
+              <li>推荐仪表板 <span>5</span></li>
+              <li>治理 <span>9</span></li>
+              <li>改进 UI/UX <span>12</span></li>
+              <li>OPTION GAME <span>16</span> </li>
+              <li>用户仪表板 <span>21</span></li>
+              <li>恐惧与贪婪仪表盘 <span>24</span> </li>
+          </ul>
+      </div>
+
+      <div class="bg-theme add-scroll">
+          <article class="def-show">
+              <span class="tag">3</span>
+              <h4>教育</h4>
+          </article>
+
+          <ul class="def-hide">
+              <li>教育倡议 <span>Spell</span></li>
+              <li>教育活动 <span>1</span></li>
+              <li>社区AMA <span>2</span></li>
+              <li>指南 <span>4</span></li>
+              <li>教程 <span>6</span></li>
+              <li>网络研讨会 <span>8</span></li>
+              <li>高级主题 <span>13</span></li>
+              <li>OPTION GAME <span>15</span></li>
+          </ul>
+      </div>
+
+      <div class="bg-yellow add-scroll">
+          <article class="def-show">
+              <span class="tag">4</span>
+              <h4>市场营销</h4>
+          </article>
+
+          <ul class="def-hide">
+              <li>CMC <span>SPELL 0</span></li>
+              <li>CG <span>SPELL 1</span></li>
+              <li>其他价格跟踪网站 <span>SPELL 2</span></li>
+              <li>社区比赛 <span>SPELL 3</span></li>
+              <li>周年庆祝活动 <span>SPELL 24</span></li>
+
+              <li>疯狂梗商品 <span>TBD</span></li>
+              <li>疯狂梗影响者合作 <span>TBD</span></li>
+              <li>Defi 影响者合作 <span>TBD</span></li>
+
+              <li>社区覆盖</li>
+              <li>500 <span>TBU</span></li>
+              <li>5000 <span>TBU</span></li>
+              <li>10000 <span>TBU</span></li>
+              <li>10000 <span>TBU</span></li>
+              <li>25000 <span>TBU</span></li>
+          </ul>
+      </div>
+
+      <div class="bg-theme add-scroll">
+          <article class="def-show">
+              <span class="tag">5</span>
+              <h4>公民</h4>
+          </article>
+
+          <ul class="def-hide">
+              <li>推荐 <span>SPELL 3</span></li>
+              <li>多语言文档 <span>SPELL 4</span></li>
+              <li>多语言群组 <span>SPELL 5</span></li>
+              <li>持有者</li>
+              <li>500 <span>TBU</span></li>
+              <li>1000 <span>TBU</span></li>
+              <li>2500 <span>TBU</span></li>
+              <li>5000 <span>TBU</span></li>
+              <li>10000 <span>TBU</span></li>
+              <li>20000 <span>TBU</span></li>
+          </ul>
+      </div>
+
+      <div class="bg-yellow add-scroll">
+          <article class="def-show">
+              <span class="tag">6</span>
+              <h4>资产</h4>
+          </article>
+
+          <ul class="def-hide">
+              <li>流动性</li>
+              <li>500K <span>TBU</span></li>
+              <li>1M <span>TBU</span></li>
+              <li>2M <span>TBU</span></li>
+              <li>5M <span>TBU</span></li>
+              <li>保险库奖励</li>
+              <li>250K <span>TBU</span></li>
+              <li>1M <span>TBU</span></li>
+              <li>5M <span>TBU</span></li>
+              <li>市值</li>
+              <li>5M <span>TBU</span></li>
+              <li>100M <span>TBU</span></li>
+              <li>250M <span>TBU</span></li>
+              <li>500M <span>TBU</span></li>
+              <li>1000M <span>TBU</span></li>
+          </ul>
+      </div>
+
+  </section>
+
+  <p class="text-white mt-4" style="margin-top: 20px;">
+      TBU = 待更新<br>
+      TBD = 待定
+  </p>
+</section>
+
+
+
+
+
+<section class="spacer bg-curve stats-section" id="blog">
+  <div class="container">
+      <div class="dual-text-box  text-center index1">
+          <h2 class="the-title mt-8">
+              博客
+          </h2>
+          <h4 class="subheading">
+              <a target="_blank" style="color: #007aff;" href="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30">阅读所有博客</a>
+          </h4>
+      </div>
+
+      <div class="news-box index1">
+          <div class="news-block text-center">
+              <iframe src="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30/1pzeOvcoZhKwqwCLsNrm2ekKTtM1msaWewZxIIIYWGI" width="100%" frameborder="0" scrolling="no">
+              </iframe>
+              <a class="btn-green" href="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30/1pzeOvcoZhKwqwCLsNrm2ekKTtM1msaWewZxIIIYWGI" target="_blank">阅读博客</a>
+          </div>
+
+          <div class="news-block text-center hide-mobile">
+              <iframe src="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30/ctP5SMXcOS6Jy2UyjculNfY6neKvoqL6bEbH_zAbU1U" width="100%" frameborder="0" scrolling="no">
+              </iframe>
+              <a class="btn-green" href="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30/ctP5SMXcOS6Jy2UyjculNfY6neKvoqL6bEbH_zAbU1U" target="_blank">阅读博客</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="spacer index1" id="faqs">
+  <h2 class="text-white the-title text-center">
+      常见问题解答
+  </h2>
+  <div class="container">
+
+      <ul class="faq-list">
+          <li>
+              <h4 class="faq-heading">哪些CAPA交易符合6%税收要求？</h4>
+              <p class="read faq-text">
+                  所有用户进行的CAPA代币交易，如购买、出售或转账等操作，都符合6%的固定税收要求。实际上，这笔税款用于CAPA代币持有者的福利，以多方面奖励他们。
+              </p>
+          </li>
+          <li>
+              <h4 class="faq-heading">支付6%税收对持有者有何好处？</h4>
+              <p class="read faq-text">
+                  收取的税款被周到地分为三个相等的部分，每个部分都有不同的用途。其中的三分之一用于代币销毁，增加稀缺性和内在价值。另一三分之一转化为$CAKE代币，形成对忠实的CAPA代币持有者的奖励池。最后的三分之一分配给CAPA Treasury，用于重要活动，如提高流动性和战略营销举措。
+              </p>
+          </li>
+          <li>
+              <h4 class="faq-heading">CAPA Meme Nation是什么？</h4>
+              <p class="read faq-text">
+                  CAPA不仅仅是另一种代币；它是CAPA Meme Nation的货币，汇聚了充满活力的Meme世界、区块链技术的高效性以及社区协作的精神。
+              </p>
+          </li>
+          <li>
+              <h4 class="faq-heading">我如何从CAPA协议中获得奖励？</h4>
+              <p class="read faq-text">
+                  CAPA协议每两周和每年向代币持有者发放奖励。要获得这些奖励，您只需持有CAPA代币，并在生态系统中保持活跃，遵循15天的税收合规要求。此外，Panda Thunder中还有其他触发事件和机会可以获得奖励。
+              </p>
+          </li>
+          <li>
+              <h4 class="faq-heading">我如何参与CAPA Meme Nation？</h4>
+              <p class="read faq-text">
+                  要成为CAPA Meme Nation的积极参与者，您只需在钱包中持有CAPA代币。您无需将代币存入钱包之外。协议从您的钱包中读取您的代币活动。
+              </p>
+          </li>
+      </ul>
+  </div>
+</section>
+<footer class="index1">
+  <div class="container">
+      <div class="footer-list" style="display: flex;">
+          <div>
+              <div class="fsys">
+                  <img width="80" src="./public/capa-token1.png" alt="">
+
+                  <ul class="icon-list">
+                      <li><a href="https://t.me/Cakepandaio" target="_blank">
+                              <img src="./public/telegram.png" alt="">
+                          </a></li>
+                      <li><a href="https://twitter.com/cakepandaio" target="_blank">
+                              <img src="./public/twitter.png" alt="">
+                          </a></li>
+                      <li><a href="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30" target="_blank">
+                              <img src="./public/newm.png" alt="">
+                          </a></li>
+
+                  </ul>
+
+              </div>
+
+              <p>
+                  Meme国家，赋予终身 passiv 收益
+
+              </p>
+          </div>
+
+          <ul class="item-list">
+
+              <li><a href="https://cakepanda.gitbook.io/capa/" target="_blank">白皮书</a></li>
+              <li><a href="https://coinmarketcap.com/currencies/cake-panda" target="_blank">Coinmarketcap</a></li>
+              <li><a href="https://app.cakepanda.io/" target="_blank">启动应用</a></li>
+
+              <li><a href="https://app.cakepanda.io/referral" translate="_blank">联盟计划</a></li>
+          </ul>
+
+      </div>
+  </div>
+
+  <a class="tele-widget" href="https://t.me/cakepandaio" target="_blank" title="加入我们的 Telegram">
+      <img src="./public/telegram.png" alt="Telegram">
+  </a>
+
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+
+<script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+
+<script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+
+<script src="./scroll-out.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+<script src="./js/controller.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z77JJT7MWR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z77JJT7MWR');
+</script>
+
+<script>
+
+$(function(){
+	$('.repeat').click(function(){
+    	var classes =  $(this).parent().attr('class');
+        $(this).parent().attr('class', 'animate');
+        var indicator = $(this);
+        setTimeout(function(){ 
+        	$(indicator).parent().addClass(classes);
+        }, 20);
+    });
+});
+
+
+$(document).ready(function () {
+        $('.nav-toggle').click(function () {
+            $('.menu-item').slideToggle('slow');
+        });
+    });
+
+  
+ScrollOut({
+	cssProps: {
+	  visibleY: true,
+	  viewportY: true
+	},
+  });
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Your existing script
+});
+</script>
+
+<script>
+
+
+gsap.to(".parallax", {
+  scrollTrigger: {
+    scrub: true
+  }, 
+  y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+  ease: "none"
+});
+
+
+
+</script>
+
+<script>
+
+  
+  var swiper = new Swiper(".mySwiperPast", {
+    effect: "cards",
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+  });
+
+  Splitting()
+
+ScrollOut({
+	targets: ['.word', '.falling', '.scrolled', '.glare', '.stream'],
+})
+
+const generateGlowButtons = () => {
+  document.querySelectorAll(".glow-button").forEach((button) => {
+      let gradientElem = button.querySelector('.gradient');
+      
+      if(!gradientElem) {
+          gradientElem = document.createElement("div");
+          gradientElem.classList.add("gradient");
+
+          button.appendChild(gradientElem);
+      }
+
+      button.addEventListener("pointermove", (e) => {
+          const rect = button.getBoundingClientRect();
+
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          gsap.to(button, {
+              "--pointer-x": `${x}px`,
+              "--pointer-y": `${y}px`,
+              duration: 0.6,
+          });
+
+          gsap.to(button, {
+              "--button-glow": chroma
+              .mix(
+                  getComputedStyle(button)
+                  .getPropertyValue("--button-glow-start")
+                  .trim(),
+                  getComputedStyle(button).getPropertyValue("--button-glow-end").trim(),
+                  x / rect.width
+              )
+              .hex(),
+              duration: 0.2,
+          });
+      });
+  });
+}
+
+// Set variables on loaded
+document.addEventListener('DOMContentLoaded', generateGlowButtons);
+
+// Set variables on resize
+window.addEventListener('resize', generateGlowButtons);
+</script>
+  </body>
+</html>
