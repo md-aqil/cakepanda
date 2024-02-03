@@ -1113,6 +1113,8 @@ line-height: normal;
 .memes-section {
   overflow: hidden;
   clip-path:inset(0);
+  width: 100%;
+  height:100%;
 }
 .spacer {
   padding-top: 80px;
@@ -1199,20 +1201,28 @@ letter-spacing: 3.36px;
 .stats-content ul li{
   color: #285028;
 font-family: Bai Jamjuree;
-font-size: 15px;
+font-size: 21px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-letter-spacing: 2.4px;
 text-align: left !important;
 padding-top: 15px;
 display:flex;
 justify-content: space-between;
-align-items: center;
+align-items: flex-start;
 flex-direction:column;
+letter-spacing:0;
 
 
 }
+
+.menu-icon {
+  background: var(--color-darkolivegreen-100);
+padding: 5px;
+border-radius: 4px;
+width: 28px;
+}
+
 
 .stats-content ul li span{
   color: #285028;
@@ -1221,7 +1231,6 @@ flex-direction:column;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 1.44px;
   display: block;
 }
 
@@ -2038,8 +2047,12 @@ ul.infol li {
 
 .dropdown {
   position: relative;
-  display: inline-block;
-  font-family: "Bai Jamjuree";
+    display: inline-block;
+    font-family: "Bai Jamjuree";
+    border-1px: solid #fff;
+    border: 1px solid #cfcfcfc7;
+    padding: 5px 10px;
+    border-radius: 3px;
 
 }
 
@@ -2076,4 +2089,18 @@ ul.infol li {
 
 .dropdown span svg{
   width: 22px;
+}
+.dropdown > span {
+  position: relative;
+}
+
+.dropdown > span:after {
+  width: 22px;
+  content: "";
+  background: url(../public/chevron-down.svg);
+  height: 20px;
+}
+.applang {
+  display:flex;
+  gap:12px
 }

@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "01/29/",
+      dayMonth = "02/12/",
       birthday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
@@ -233,13 +233,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("minutes").innerText = String(minutes).padStart(2, "0") + " :";
     document.getElementById("seconds").innerText = String(seconds).padStart(2, "0");
 
-    // Do something later when the date is reached
-    if (distance < 0) {
-      document.getElementById("countdown").style.display = "none";
-      document.getElementById("headline").innerText = "Times Up";
-      document.getElementById("content").style.display = "block";
-      clearInterval(x);
-    }
+   
   }, 0);
 })();
 
