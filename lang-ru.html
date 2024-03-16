@@ -39,6 +39,21 @@
     left: 0;
     right: 0;
     height: 100vh !important;"></canvas>
+     <div class="stripbar">
+      <div class="marquee-container container">
+        <marquee behavior="scroll" direction="left">
+
+          <a style="color: #fff;" href="https://www.pinksale.finance/launchpad/0x622BA6c0AAd2Ed0ad64b1b5a613d50FDACDF00CB?chain=BSC&refId=0x40807BAD8acCeA26c92AD6e510A94745BccC3D3f" target="_blank">Presale</a> on  Pinksale starting 20<sup>th</sup> March | <a style="color: #fff;" href="https://docs.google.com/forms/d/e/1FAIpQLScr4udcVV4iat1ncfeKF2i7vkwhioegxPGBmMLNiv3hAaclkg/viewform" target="_blank">Whitelist</a> campaign is live on Galxe | Protocol is Live on BSC Testnet
+
+        </marquee>
+        <div class="close-button" style="position: absolute;
+        right: 40px;
+        top: 4px;
+        font-size: 20px;
+        cursor: pointer; font-weight: 300;" onclick="hideMarquee()">✖</div>
+
+    </div>
+    </div>
     <div class="transparent-kung-fu-panda-png-group panda1-box " style="position: 1; z-index: 1; text-align: right;">
       <img src="./public/panda-green.png"  class="panda-1" style="width: 450px;" alt="">
             
@@ -127,7 +142,7 @@
                                 <a target="_blank" href="https://cakepanda.gitbook.io/">Документация</a>
                             </li>
                             <div class="button-nav show-mobile">
-                                <a href="https://app.cakepanda.io/" class="launch-app-parent" target="_blank">
+                                <a href="https://testnet.cakepanda.io/" class="launch-app-parent" target="_blank">
                                     <div class="launch-app">Запустить приложение</div>
                                     <img
                                         class="material-symbolsrocket-launch-icon"
@@ -142,7 +157,7 @@
                         </div>
                         <img src="./public/menu.svg"  class="menu-icon nav-toggle" alt="">
                         <div class="button-nav hide-mobile">
-                            <a href="https://app.cakepanda.io/" class="launch-app-parent" target="_blank">
+                            <a href="https://testnet.cakepanda.io/" class="launch-app-parent" target="_blank">
                                 <div class="launch-app">Запустить приложение</div>
                                 <img
                                     class="material-symbolsrocket-launch-icon"
@@ -308,15 +323,12 @@
     <div class="bg-theme" style="overflow: hidden;">
 
       <section class="memes-section spacer">
-          <h1 class="meme" id="meme1">
-              <img src="./public/This or That 1.png" width="200" alt="">
-          </h1>
-          <h1 class="meme" id="meme2">
-              <img src="./public/Love It 1.png" width="150" alt="">
-          </h1>
-          <h1 class="meme" id="meme3">
-              <img src="./public/Vibes 1.png" width="200" alt="">
-          </h1>
+        <img class="meme" id="meme1" src="./public/emojis/1.png" width="150" alt="">
+        <img class="meme" id="meme1" src="./public/emojis/6.png" width="150" alt="">
+        <img class="meme" id="meme2" src="./public/emojis/7.png" width="150" alt="">
+        <img class="meme" id="meme2" src="./public/emojis/17.png" width="150" alt="">
+        <img   class="meme" id="meme3"src="./public/Vibes 1.png" width="200" alt="">
+
           <div class="container">
   
               <div class="flex-box" style="align-items: flex-end;">
@@ -401,78 +413,90 @@
       </h2>
 
       <div class="double-box index1">
-          <div class="stats-content double-conent">
-              <ul>
-                  <li>
-                      <span>ЧАСТНЫЙ РАУНД</span>
-                      14.0%
-                  </li>
+        <div class="stats-content double-conent">
+          <ul>
+            <li>
+              <span>PRIVATE ROUND</span>
+              14.0%
+          </li>
 
-                  <li>
-                      <span>ОТКРЫТЫЙ РАУНД</span>
-                      40.0%
-                  </li>
-                  <li>
-                      <span>ЛИКВИДНОСТЬ DEX</span>
-                      19.4%
-                  </li>
+          <li>
+            <span>STRATEGIC ROUND</span>
+            4.0%
+        </li>
+      
+            <li>
+              <span>PUBLIC ROUND</span>
+              36.0%
+          </li>
+          <li>
+            <span>DEX LIQUIDITY</span>
+            19%
+        </li>
 
-
-                  <li>
-                      <span>КОМАНДА</span>
-                      8%
-                  </li>
-              </ul>
-
-              <ul>
-
-                  <li>
-                      <span>РАЗДАЧА</span>
-                      1.6%
-                  </li>
+          
+        
+          </ul>
 
 
-                  <li>
-                      <span>Рост сообщества</span>
-                      7%
-                  </li>
-                  <li>
-                      <span>Рост ликвидности</span>
-                      10%
-                  </li>
 
-              </ul>
+          <ul>
+            <li>
+              <span>TEAM</span>
+              8%
+          </li>
+          
+          <li>
+            <span>AIRDROP</span>
+            2%
+        </li>
+      
+           
+            <li>
+              <span>Community Growth </span>
+              7%
+          </li>
+          <li>
+            <span>Liquidity Growth </span>
+            10%
+        </li>
+         
+          </ul>
+          
 
-              <ul class="lbt">
+          <ul  class="lbt">
 
-                  <li>
-                      <div class="label-box">
-                          Символ токена
-                          <b>CAPA</b>
-                      </div>
+            <li>
+              <div  class="label-box">
+                Token Symbol
+                <b>CAPA</b>
+              </div>
+             
+            </li>
 
-                  </li>
+            <li>
+              <div  class="label-box invert">
+                Token Type
+                <b>BEP20</b>
+              </div>
+             
+             
+          </li>
+          <li>
+            <p class="tp">
+              Initial circulating supply at TGE <b>58.6%</b>
+            </p>
+            <p class="tp">
+              Initial mcap at TGE<b>TBD</b>
+            </p>
+          </li>
+         
+         
+          </ul>
+  
 
-                  <li>
-                      <div class="label-box invert">
-                          Тип токена
-                          <b>BEP20</b>
-                      </div>
-
-
-                  </li>
-                  <li>
-                      <p class="tp">
-                          Начальное количество токенов в обращении на момент TGE <b>42.2%</b>
-                      </p>
-                      <p class="tp">
-                          Начальная капитализация на момент TGE <b>TBD</b>
-                      </p>
-                  </li>
-
-              </ul>
-
-          </div>
+  
+      </div>
 
 
       </div>
@@ -506,7 +530,7 @@
               <img
                 class="leonardo-diffusion-xl-tokens-b-icon"
                 alt=""
-                src="./public/Leonardo_Diffusion_XL_Tokens_burn_blockchain_concept_with_a_st_2.jpg"
+                src="./public/token-burn.png"
               />
             </div>
           </div>
@@ -530,7 +554,7 @@
               <img
                 class="leonardo-diffusion-xl-token-st-icon"
                 alt=""
-                src="./public/Leonardo_Diffusion_XL_token_storing_in_box_blockchain_concept_2.jpg"
+                src="./public/cake-token.png"
               />
             </div>
           </div>
@@ -558,7 +582,7 @@
               <img
                 class="leonardo-diffusion-xl-token-st-icon"
                 alt=""
-                src="./public/box-open.jpg"
+                src="./public/lp.png"
               />
             </div>
           </div>
@@ -604,8 +628,8 @@
         <li>Веб-сайт <span><img src="./public/check.svg" width="26px" alt=""></span></li>
         <li>Белая книга <span><img src="./public/check.svg" width="26px" alt=""></span></li>
         <li>Частная продажа <span><img src="./public/check.svg" width="26px" alt=""></span></li>
-        <li>IDO <span>TBD</span></li>
-        <li>Запуск основной сети <span>TBD</span></li>
+        <li>IDO <span>20th March 2024</span></li>
+        <li>Запуск основной сети <span>22nd March 2024</span></li>
       </ul>
     </div>
 
@@ -724,6 +748,40 @@
   </p>
 </section>
 
+<section class="spacer" id="partnership">
+  <div class="container">
+    <div class="dual-text-box  text-center index1">
+      <h2 class="the-title mt-8 text-white">
+        Partnership
+      </h2>
+      
+    </div>
+   
+    <ul class="partner-list">
+      <li><a href="">
+        <img src="./public/cyberscope.png" alt="">
+      </a></li>
+      <li><a href="">
+        <img src="./public/pinksale.webp" alt="">
+      </a></li>
+      <li><a href="">
+        <img src="./public/dexview.webp" style="filter: invert(1);" alt="">
+      </a></li>
+    
+      <li><a href="">
+        <img src="./public/legacy.svg" style="width: 300px;" alt="">
+      </a></li>
+      <li><a href="">
+        <img style="height: 71px;
+        object-fit: contain;
+        width: 125px;" src="./public/marketing.webp" alt="">
+      </a></li>
+
+    </ul>
+  </div>
+</section>
+
+
 <section class="spacer bg-curve stats-section" id="blog">
   <div class="container">
     <div class="dual-text-box text-center index1">
@@ -820,8 +878,8 @@
       <ul class="item-list">
         <li><a href="https://cakepanda.gitbook.io/capa/" target="_blank">Белая бумага</a></li>
         <li><a href="https://coinmarketcap.com/currencies/cake-panda" target="_blank">Coinmarketcap</a></li>
-        <li><a href="https://app.cakepanda.io/" target="_blank">Запустить приложение</a></li>
-        <li><a href="https://app.cakepanda.io/referral" target="_blank">Партнерская программа</a></li>
+        <li><a href="https://testnet.cakepanda.io/" target="_blank">Запустить приложение</a></li>
+        <li><a href="https://testnet.cakepanda.io/referral" target="_blank">Партнерская программа</a></li>
       </ul>
     </div>
   </div>

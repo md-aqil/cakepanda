@@ -47,38 +47,6 @@ $(document).ready(function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const memes = document.querySelectorAll('.meme');
-
-  function animateMeme(element) {
-    gsap.to(element, {
-      x: Math.random() * (window.innerWidth + element.clientWidth) - element.clientWidth,
-      y: Math.random() * (window.innerHeight + element.clientHeight) - element.clientHeight,
-      opacity: Math.random(),
-      rotation: 30, // Adjust the rotation to a smaller angle
-      duration: 10, // Make the entire animation slower (5 times)
-      // repeat: -1,
-      yoyo:true,
-      onComplete: function() {
-        gsap.set(element, { opacity: 0, rotation: 0 });
-
-        gsap.to(element, {
-          x: Math.random() * (window.innerWidth + element.clientWidth) - element.clientWidth,
-          y: Math.random() * (window.innerHeight + element.clientHeight) - element.clientHeight,
-          opacity: 1,
-          rotation: 30, // Adjust the rotation for the appearance
-          duration: 7, // Make the appearance slower (5 times)
-          onComplete: function() {
-            animateMeme(element);
-          }
-        });
-      }
-    });
-  }
-
-  memes.forEach(animateMeme);
-});
-
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
@@ -92,6 +60,37 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
     },
   },
+});
+
+
+
+var swiper = new Swiper('.swiper-loop', {
+  loop: true,
+  autoplay: {
+    delay: 1,
+  },
+  freeMode: true,
+  speed: 5000,
+  slidesPerView: "auto",
+  spaceBetween: 60,
+  breakpoints: {
+    1400: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+        centeredSlides: true,
+     },
+     320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+     },
+   }
+   
+});
+
+$(".swiper-loop").hover(function () {
+  (this).swiper.autoplay.stop();
+}, function () {
+  (this).swiper.autoplay.start();
 });
 
 
@@ -197,6 +196,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
 (function () {
   const second = 1000,
         minute = second * 60,
@@ -208,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "02/12/",
+      dayMonth = "03/20/",
       birthday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
@@ -259,16 +260,53 @@ $(document).ready(function () {
   function animateOdometer() {
     var odometer = new Odometer({ 
       el: $('.odometer')[0], 
-      value: 1000, 
+      value: 993, 
       theme: 'minimal',
       duration: 5000
     });
     odometer.render();
 
     // Set the desired value
-    $('.odometer').text(995);
+    $('.odometer').text(993);
   }
 });
 
 
 
+function hideMarquee() {
+  document.querySelector('.stripbar').style.display = 'none';
+}
+
+function copyToClipboard() {
+  // Create a temporary input element
+  var tempInput = document.createElement("input");
+  // Assign the Ethereum address to its value
+  tempInput.value = "0xE13288c36f5a792d95e1091bA603959d82085B2b";
+  // Append it to the DOM
+  document.body.appendChild(tempInput);
+  // Select the text in the input
+  tempInput.select();
+  // Copy the selected text
+  document.execCommand("copy");
+  // Remove the temporary input
+  document.body.removeChild(tempInput);
+  // Provide some visual feedback (optional)
+  alert("Address copied to clipboard: 0xE13288c36f5a792d95e1091bA603959d82085B2b");
+}
+
+
+
+// JavaScript to shake the element every 40 seconds
+function shakeElement() {
+  var element = document.querySelector('.element');
+  element.classList.add('shake-effect');
+  setTimeout(function() {
+    element.classList.remove('shake-effect');
+  }, 500); // Duration of the shake animation
+}
+
+// Call shakeElement initially
+shakeElement();
+
+// Call shakeElement every 40 seconds
+setInterval(shakeElement, 4000); // 40 seconds

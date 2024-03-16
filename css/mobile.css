@@ -1,5 +1,35 @@
 @media (min-width: 320px) and (max-width: 480px) {
-  
+   
+    .swiper-loop {
+        width:100%;
+      }
+
+    .partner-list {
+        justify-content: center;
+    
+        
+        
+    }
+    .partner-list  li {
+    border: 1px solid #ffffff47;
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+.contract-address {
+    font-size: 14px;
+}
+.close-button {
+    right: 7px;
+}
+.brand-info-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .brand-info li{
+    border:none !important;
+  }  
     .cake-navbar ul li a  {
 
     }
@@ -121,7 +151,9 @@
     .vector-group{
         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
-
+    .border-list {
+        width:100%;
+    }
   
     .a-hyper-deflationary-and-container {
         color: #fff;
@@ -145,8 +177,34 @@
 
   .menu-icon {
     display: block;
+    order: 1;
+    margin-left: 10px;
   }
+  .dropdown {
+    font-size: 12px;
+  }
+  .dropdown span svg {
+    width: 16px;
+}
+.community-marketplace {
+    font-size: 40px;
+}
+.close-button {
+    position: absolute;
+    right: 40px;
+    top: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    right: 3px;
+    background: #285028;
+    width: 30px;
+    padding-left: 7px;
+}
 
+.green-btn {
+    position: relative;
+    z-index: 1000;
+}
   .rh {
     border-radius: 10px;
     border: 2px solid #EFD912;
@@ -163,10 +221,31 @@
 
 .stats-content {
     flex-direction: column;
-    width: 85%;
+    width: 100%;
     padding: 30px;
 }
-
+.label-box {
+    width: 100%;
+}
+.def-show {
+    text-align: left;
+}
+.expand .def-show h4 {
+    margin: 20px auto;
+}
+.meme-nation-section {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dual-text-wrapper {
+    width: 90%;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.faq-heading {
+    padding-right: 30px;
+}
 .footer-list {
     display: flex;
     justify-content: space-between;
@@ -328,11 +407,15 @@
 
   #countdown ul {
     gap:0;
+    justify-content:center;
   }
   #countdown ul li span {
-    font-size:35px;
+    font-size:22px;
 
 
+  } 
+  .glow-button {
+    font-size: 16px;
   }
   .spot-list li h1 {
     font-size:35px;

@@ -29,38 +29,8 @@
     />
 
     <style>
-      .menu-icon {
-    display: block;
-}
-
-.cake-navbar ul {
-  padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    position: absolute;
-    top: 45px;
-    width: 200px;
-    box-shadow: 0 0 10px #799437;
-    background: linear-gradient(180deg, #059825, #006e1f);
-    display: none;;
-}
-.cake-navbar ul li  {
-  padding: 5px 5px;
-
-}
-.menu-icon {
-  width: 40px;
-  cursor: pointer;
-  background: linear-gradient(180deg, #059825, #006e1f);
-
-}
-.cake-panda {
-  width: 40%;
-}
+    
+ 
 
     </style>
    
@@ -73,6 +43,21 @@
     left: 0;
     right: 0;
     height: 100vh !important;"></canvas>
+    <div class="stripbar">
+      <div class="marquee-container container">
+        <marquee behavior="scroll" direction="left">
+
+          <a style="color: #fff;" href="https://www.pinksale.finance/launchpad/0x622BA6c0AAd2Ed0ad64b1b5a613d50FDACDF00CB?chain=BSC&refId=0x40807BAD8acCeA26c92AD6e510A94745BccC3D3f" target="_blank">Presale</a> on  Pinksale starting 20<sup>th</sup> March | <a style="color: #fff;" href="https://docs.google.com/forms/d/e/1FAIpQLScr4udcVV4iat1ncfeKF2i7vkwhioegxPGBmMLNiv3hAaclkg/viewform" target="_blank">Whitelist</a> campaign is live on Galxe | Protocol is Live on BSC Testnet
+
+        </marquee>
+        <div class="close-button" style="position: absolute;
+        right: 40px;
+        top: 4px;
+        font-size: 20px;
+        cursor: pointer; font-weight: 300;" onclick="hideMarquee()">✖</div>
+
+    </div>
+    </div>
     <div class="transparent-kung-fu-panda-png-group panda1-box " style="position: 1; z-index: 1; text-align: right;">
       <img src="./public/panda-green.png"  class="panda-1" style="width: 450px;" alt="">
             
@@ -105,14 +90,17 @@
               <span>A meme community empowering sustained lifetime passive earnings<br>to token holders <span style="color: #efd912; font-weight: bold;"> with the power of DeFi.</span> </span>
              
             </div>
-            <div class="mingcutecoin-fill-group btn-theme  mt-3 fade-in delay_4" data-scroll="">
+            <div class="mingcutecoin-fill-group btn-theme  mt-3 element shake-effect">
               <img
                 class="mingcutecoin-fill-icon"
                 alt=""
                 src="./public/mingcutecoinfill.svg"
               />
     
-              <div href="" class="read-whitepaper" style="color:#333">Buy Now</div>
+              <a target="_blank" href="https://www.pinksale.finance/launchpad/0x622BA6c0AAd2Ed0ad64b1b5a613d50FDACDF00CB?chain=BSC&refId=0x40807BAD8acCeA26c92AD6e510A94745BccC3D3f" class="read-whitepaper " style="color:#333" >Buy Now</a>
+
+
+
             </div>
 
 
@@ -169,33 +157,22 @@
                 <a  href="#whitelist" class="page">Presale Whitelist</a>
               </li>
 
-              <li>
-                <a  href="#stats" class="page">Stats</a>
-              </li>
              
               <li>
                 <a  href="#tokenomics" class="page">Tokenomics</a>
               </li>
-              <li>
-                <a  href="#meme-nation" class="page">Meme Nation</a>
-              </li>
-              
+           
               <li>
                 <a  href="#roadmap" class="page">RoadMap</a>
               </li>
-              <li>
-                <a href="#blog" class="page">Blogs</a>
-              </li>
              
-              <li>
-                <a class="page" href="#faqs">FAQs</a>
-              </li>
               <li>
                 <a target="_blank" href="https://cakepanda.gitbook.io/">Docs</a>
               </li>
+              
 
               <div class="button-nav show-mobile">
-                <a href="https://app.cakepanda.io/" class="launch-app-parent" target="_blank">
+                <a href="https://testnet.cakepanda.io/" class="launch-app-parent" target="_blank">
                   <div class="launch-app">Launch App</div>
                   <img
                     class="material-symbolsrocket-launch-icon"
@@ -218,7 +195,7 @@
 
             <div class="applang">
               <div class="button-nav hide-mobile">
-              <a href="https://app.cakepanda.io/" class="launch-app-parent" target="_blank">
+              <a href="https://testnet.cakepanda.io/" class="launch-app-parent" target="_blank">
                 <div class="launch-app">Launch App</div>
                 <img
                   class="material-symbolsrocket-launch-icon"
@@ -299,6 +276,8 @@
       <div class="ann-sec fade-in" data-scroll="">
         <div class="index1 announcebox bg-yellow">
           <div class="vlist">
+
+
             <div style="display: flex;
             align-items: center;
             gap: 20px;">
@@ -314,12 +293,35 @@
           </div>
   
         </div>
-        <ul class="brand-info">
-          <li style="border-right: 1px solid;
-          padding-right: 30px;" class="fade-in delay_2" data-scroll="">Building On<img src="./public/bnb-chain-full-binance-smart-chain-logo.png" alt=""></li>
+        <div class="brand-info-flex">
+          <ul class="brand-info">
+          
+            <li class="fade-in delay_3">
+              <a target="_blank" href="https://www.cyberscope.io/audits/1-capa" style="color: #fff;
+              display: flex;
+              gap: 10px; text-decoration: none;">
+              Audited By
+              <img src="./public/cyberscope.png" alt="">
+            </a>
+            </p>
+            </li>
+          
+          </ul>
+          <ul class="brand-info">
+            <li style="border-right: 1px solid;
+            padding-right: 30px;" class="fade-in delay_2" data-scroll="">Building On<img src="./public/bnb-chain-full-binance-smart-chain-logo.png" alt=""></li>
+  
+            <li class="fade-in delay_3" data-scroll="">Asset Reserve With<img src="./public/panlogo-white.png" alt="" style="width: 180px;"></li>
+          </ul>
+        </div>
+        <p class="text-white contract-address" style="margin-top: 30px;">
+          <b>Token Contract:</b> <span style="cursor: pointer;" onclick="copyToClipboard()">0xE13288c36f5a792d95e1091bA603959d82085B2b 
+          <span style="vertical-align: middle;
+          margin-left: 2px;" title="This is the final token contract. On coinmarketcap we have applied for new contract address update">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+          </span>
+        </span>
 
-          <li class="fade-in delay_3" data-scroll="">Asset Reserve With<img src="./public/panlogo-white.png" alt="" style="width: 180px;"></li>
-        </ul>
       </div>
       
     </div>
@@ -390,7 +392,7 @@
            bottom: -80px;" data-scroll data-scroll-parallax alt="">
           <div class="ftr">
             
-            <h4 class="float-label odometer" style="position: static;" id="odometer">1000</h4>
+            <h4 class="float-label odometer" style="position: static;" id="odometer">993</h4>
             <span class="st" style="color: #285028;">Total WL spots <b>1000</b></span>
           </div>
           
@@ -421,7 +423,7 @@
   
                     </p>
                     <p class="mb-3">
-                  <a href="https://docs.google.com/spreadsheets/d/1xxTFOyE5fmeD6j8yXYmSvaApZTN3crnwwR11a2-7wh8/edit?usp=sharing" class="link-text" style="color: #059825;">View Whitelisted List</a>
+                  <a href="https://docs.google.com/spreadsheets/d/1xxTFOyE5fmeD6j8yXYmSvaApZTN3crnwwR11a2-7wh8/edit?usp=sharing" class="link-text" style="color: #059825;" target="_blank">View Whitelisted List</a>
         
                     </p>
                   </div>
@@ -429,11 +431,13 @@
                  
                   <ul class="infol mb-5" style="margin-left: 100px;">
                     <h2 class="mb-1">Ways to get a WL</h2>
-                    <li>Participate in our WL campaign on Galxe </li>
-                    <li>Participate in Testnet campaign on Galxe</li>
+                    <li>Participate in our WL campaign on <a target="_blank" href="https://galxe.com/3qvrQH9dimxbo4pz3k3NJV">Galxe</a>  </li>
+                    <li>Participate in Testnet campaign on <a target="_blank" href="https://galxe.com/3qvrQH9dimxbo4pz3k3NJV">Galxe</a></li>
                     <li>Win WL from one of our AMAs in other communities</li>
+
                     <li>Influencers, admins of popular communities, CAKE/Monsta/BNB
-                      holders can request for WL in our Telegram Chat.</li>
+                      holders can request for WL <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScr4udcVV4iat1ncfeKF2i7vkwhioegxPGBmMLNiv3hAaclkg/viewform">here</a> 
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -455,8 +459,10 @@
 
       <div class="container" style="position: relative;">
         
-        <img class="meme" id="meme1" src="./public/This or That 1.png" width="200" alt="">
-        <img class="meme" id="meme2" src="./public/Love It 1.png" width="150" alt="">
+        <img class="meme" id="meme1" src="./public/emojis/1.png" width="150" alt="">
+        <img class="meme" id="meme1" src="./public/emojis/6.png" width="150" alt="">
+        <img class="meme" id="meme2" src="./public/emojis/7.png" width="150" alt="">
+        <img class="meme" id="meme2" src="./public/emojis/17.png" width="150" alt="">
         <img   class="meme" id="meme3"src="./public/Vibes 1.png" width="200" alt="">
 
         <div class="flex-box" style="align-items: flex-end;">
@@ -498,15 +504,20 @@ to eat after searching the kitchen for ages
         
     </section>
 
-    <!-- <section class="memes-section  spacer-bottom">
-      <div class="container text-center">
-          <h2 class="text-white the-title">
-            EXPLAINER 
-            VIDEO
-          </h2>
-          <img class="width100" src="./public/explainer-banner.png" alt="">
+    <section class="memes-section  spacer-bottom index1 text-center">
+      <h2 class="text-white the-title mb-4">
+       Sneakpeak
+      </h2>
+      <div class="container" style="display: flex;
+      align-items: center;
+      justify-content: center;">
+         
+         
+
+          <blockquote class="twitter-tweet" data-media-max-width="700" style="margin: auto;"><p lang="en" dir="ltr">👀A sneak peak into Cake Panda&#39;s protocol DApp that CAPA holders will be using. <br><br>A lot of work has been done by the team in designing a user friendly DApp interface. <br><br>📩Feedbacks are welcome!<br>Visit: <a href="https://t.co/IJVNfyVMQp">https://t.co/IJVNfyVMQp</a><a href="https://twitter.com/cakepandaio?ref_src=twsrc%5Etfw">@cakepandaio</a> <a href="https://twitter.com/hashtag/capa?src=hash&amp;ref_src=twsrc%5Etfw">#capa</a> <a href="https://t.co/T025GxpofM">pic.twitter.com/T025GxpofM</a></p>&mdash; Cake Panda (@cakepandaio) <a href="https://twitter.com/cakepandaio/status/1762078589388718552?ref_src=twsrc%5Etfw">February 26, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
         </div>
-        </section> -->
+        </section> 
     </div>
    
     <section class="stats-section por text-center spacer" id="stats">
@@ -555,23 +566,6 @@ to eat after searching the kitchen for ages
     </section>
 
 
-    <!-- <section class="stats-section por text-center bg-theme spacer" style="margin-top: -5px;">
-      <img src="./public/leaf.png" alt="" style="position: absolute; bottom: 300px; left: 0; width: 200;" class="parallax" data-speed="0.8">
-      <img src="./public/leaf-b.png" alt="" style="position: absolute;
-      right: 0px;
-      top: 30px; width: 250px;"  class="parallax"  data-speed="0.5">
-      <div class="container">
-        <h2 class="text-white the-title">
-          HOW TO BUY
-        </h2>
-        <img src="./public/how-to-buy.svg" alt="">
-        <p class="para mt-3">
-          Use Flooz.Trade to get MONSTA via Apple Pay, GPay or your Credit Card!
-        </p>
-        <button class="btn-theme">OPEN FLOOZ.TRADE</button>
-      </div>
-    </section> -->
-
     <section class="bg-theme spacer" id="tokenomics">
       <div class="container">
         <h2 class="text-white the-title text-center mb-5">
@@ -586,30 +580,36 @@ to eat after searching the kitchen for ages
                 <span>PRIVATE ROUND</span>
                 14.0%
             </li>
-          
+
+            <li>
+              <span>STRATEGIC ROUND</span>
+              4.0%
+          </li>
+        
               <li>
                 <span>PUBLIC ROUND</span>
-                40.0%
+                36.0%
             </li>
             <li>
               <span>DEX LIQUIDITY</span>
-              19.4%
+              19%
           </li>
 
             
-           <li>
-                  <span>TEAM</span>
-                  8%
-              </li>
+          
             </ul>
 
 
 
             <ul>
+              <li>
+                <span>TEAM</span>
+                8%
+            </li>
             
             <li>
               <span>AIRDROP</span>
-              1.6%
+              2%
           </li>
         
              
@@ -645,7 +645,7 @@ to eat after searching the kitchen for ages
             </li>
             <li>
               <p class="tp">
-                Initial circulating supply at TGE <b>42.2%</b>
+                Initial circulating supply at TGE <b>58.6%</b>
               </p>
               <p class="tp">
                 Initial mcap at TGE<b>TBD</b>
@@ -671,7 +671,7 @@ to eat after searching the kitchen for ages
         <h2 class="the-title">
           Cake Panda Meme Nation Economy
         </h2>
-        <h4 class="subheading">When a holder does a transaction of 100k Panda Token </h4>
+        <h4 class="subheading">When a holder does a transaction of 100k CAPA Token </h4>
       </div>
      
   
@@ -695,7 +695,7 @@ to eat after searching the kitchen for ages
                         <img
                           class="leonardo-diffusion-xl-tokens-b-icon"
                           alt=""
-                          src="./public/Leonardo_Diffusion_XL_Tokens_burn_blockchain_concept_with_a_st_2.jpg"
+                          src="./public/token-burn.png"
                         />
                       </div>
                     </div>
@@ -719,7 +719,7 @@ to eat after searching the kitchen for ages
                         <img
                           class="leonardo-diffusion-xl-token-st-icon"
                           alt=""
-                          src="./public/Leonardo_Diffusion_XL_token_storing_in_box_blockchain_concept_2.jpg"
+                          src="./public/cake-token.png"
                         />
                       </div>
                     </div>
@@ -732,7 +732,7 @@ to eat after searching the kitchen for ages
                           <span>(2000 Tokens)</span>
                         </div>
                         <div class="burn">
-                          <p class="panda-tokens-get">PANDA tokens get</p>
+                          <p class="panda-tokens-get">CAPA tokens get</p>
                           <p class="panda-tokens-get">converted into CAKE token</p>
                           <p class="panda-tokens-get">and stored into the</p>
                           <p class="panda-tokens-get">holder reward pool.</p>
@@ -749,7 +749,7 @@ to eat after searching the kitchen for ages
                         <img
                           class="leonardo-diffusion-xl-token-st-icon"
                           alt=""
-                          src="./public/box-open.jpg"
+                          src="./public/lp.png"
                         />
                       </div>
                     </div>
@@ -899,8 +899,8 @@ to eat after searching the kitchen for ages
             <li>Website <span><img src="./public/check.svg" width="26px" alt=""></span></li>
             <li>Whitepaper <span><img src="./public/check.svg" width="26px" alt=""></span></li>
             <li>Private Sale <span><img src="./public/check.svg" width="26px" alt=""></span></li>
-            <li>IDO <span>TBD</span></li>
-            <li>Mainnet Launch <span>TBD</span></li>
+            <li>IDO <span  style="line-height: 1.4;">20th March 2024</span></li>
+            <li >Mainnet Launch <span style="line-height: 1.4;">22nd March 2024</span></li>
           </ul>
         </div>
 
@@ -1023,114 +1023,45 @@ to eat after searching the kitchen for ages
 
       <p class="text-white mt-4" style="margin-top: 20px;">
         TBU = To be updated later<br>
-        TBD = TBD later
+        TBD = TBD later<br>
+        Spell = Period of 14 days
       </p>
       
   </section>
 
-
-    <!-- <section class="por text-center bg-theme spacer index1" id="vision">
-     
-        <h2 class="text-white the-title">
-          VISION
+  <section class="spacer index1" id="partnership">
+    <div class="container">
+      <div class="dual-text-box  text-center index1">
+        <h2 class="the-title mt-8 text-white">
+          Partnership
         </h2>
+        
+      </div>
+     
+      <ul class="partner-list">
+        <li><a target="_blank" href="https://www.cyberscope.io/audits/1-capa">
+          <img src="./public/cyberscope.png" alt="">
+        </a></li>
+        <li><a href="https://www.pinksale.finance/launchpad/0x622BA6c0AAd2Ed0ad64b1b5a613d50FDACDF00CB?chain=BSC" target="_blank">
+          <img src="./public/pinksale.webp" alt="">
+        </a></li>
+        <li><a target="_blank" href="https://www.dexview.com/">
+          <img src="./public/dexview.webp" style="filter: invert(1);" alt="">
+        </a></li>
+      
+        <li><a href="">
+          <img src="./public/legacy.svg" style="width: 300px;" alt="">
+        </a></li>
+        <li><a href="">
+          <img style="height: 71px;
+          object-fit: contain;
+          width: 125px;" src="./public/marketing.webp" alt="">
+        </a></li>
 
-        <section class="exp-section">
-          <div style="background: url(./public/panda-eat.png);" class="expand">
-            <article class="def-show">
-              <span class="tag">1</span>
-              <h4>Inception & Launch</h4>
-            </article>
-            
-            <ul class="def-hide">
-              <li>Form Team</li>
-              <li>Project Planning</li>
-              <li>Character Conception</li>
-              <li>Website & Dapps</li>
-              <li>Strategic Partnership</li>
-            </ul>
-          </div>
+      </ul>
+    </div>
+  </section>
 
-          <div style="background: url(./public/panda-eat.png);">
-            <article class="def-show">
-              <span class="tag">2</span>
-              <h4>NFTs</h4>
-            </article>
-            
-            <ul class="def-hide">
-              <li>Form Team</li>
-              <li>Project Planning</li>
-              <li>Character Conception</li>
-              <li>Website & Dapps</li>
-              <li>Strategic Partnership</li>
-            </ul>
-          </div>
-        
-          <div style="background: url(./public/panda-eat.png);">
-            <article class="def-show">
-              <span class="tag">3</span>
-              <h4>Additional Utility</h4>
-            </article>
-            
-            <ul class="def-hide">
-              <li>Form Team</li>
-              <li>Project Planning</li>
-              <li>Character Conception</li>
-              <li>Website & Dapps</li>
-              <li>Strategic Partnership</li>
-            </ul>
-          </div>
-          <div style="background: url(./public/panda-eat.png);">
-            <article class="def-show">
-              <span class="tag">4</span>
-              <h4>Philanthropy</h4>
-            </article>
-            
-            <ul class="def-hide">
-              <li>Form Team</li>
-              <li>Project Planning</li>
-              <li>Character Conception</li>
-              <li>Website & Dapps</li>
-              <li>Strategic Partnership</li>
-            </ul>
-          </div>
-          <div style="background: url(./public/panda-eat.png);">
-            <article class="def-show">
-              <span class="tag">5</span>
-              <h4>Expansion</h4>
-            </article>
-            
-            <ul class="def-hide">
-              <li>Form Team</li>
-              <li>Project Planning</li>
-              <li>Character Conception</li>
-              <li>Website & Dapps</li>
-              <li>Strategic Partnership</li>
-            </ul>
-          </div>
-          <div style="background: url(./public/panda-eat.png);">
-            <article class="def-show">
-              <span class="tag">6</span>
-              <h4>Community</h4>
-            </article>
-            
-            <ul class="def-hide">
-              <li>Form Team</li>
-              <li>Project Planning</li>
-              <li>Character Conception</li>
-              <li>Website & Dapps</li>
-              <li>Strategic Partnership</li>
-            </ul>
-          </div>
-        
-         
-         
-         
-         
-        </section>
-        
-    </section> -->
-   
 
   <section class="spacer bg-curve stats-section" id="blog">
     <div class="container">
@@ -1210,45 +1141,158 @@ to eat after searching the kitchen for ages
                       </li>
                   </ul>
               </div>
+
+
+              <div class="container br-x" style="display: flex; align-items: center;">
+                <h4 class="aso">As seen on</h4>
+                <div class="swiper-container swiper-loop" >
+                  <div class="swiper-wrapper" style="align-items: center;">
+                 
+                    <div class="swiper-slide">
+                      <img src="./public/coinsniper.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="https://coincatapult.com/coin/cake-panda-capa" target="_blank">
+                     <img src="./public/coincatapult.png" alt="">
+                    </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="https://coinhunt.cc/coin/65f56ae29c3b014b41e5d17d" target="_blank">
+                      <img src="./public/coinhunt.webp" alt="">
+                    </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="https://coindiscovery.app/coin/cake-panda/overview" target="_blank">
+                        <img src="./public/coindiscovry.png" alt="">
+                      </a>
+                      
+                    </div>
+                  
+                    <div class="swiper-slide">
+                      <a href="https://cointoplist.net/coin/cake-panda" target="_blank">
+                        <img src="./public/cointoplist.png" alt="">
+                      </a>
+                    </div>
+
+                  
+                    <div class="swiper-slide">
+                      <a href="https://www.freshcoins.io/coins/cake-panda" target="_blank">
+                      <img src="./public/freshcoins.png" alt="">
+                    </a>
+                    </div>
+                   
+
+                    <div class="swiper-slide">
+                      <a href="https://gemfinder.cc/gem/18653">
+                      <img src="./public/gemfinder.png" alt="">
+                    </a>
+                    </div>
+
+                    <div class="swiper-slide">
+
+                      <a target="_blank" href="https://coinmooner.com/coin/cake-panda-capa">
+                      <img src="./public/coinmooner.webp" alt="">
+                    </a>
+
+                    </div>
+
+                    <div class="swiper-slide">
+                      <a href="https://coinmooner.com/coin/cake-panda-capa">
+                      <img src="./public/coinmooner.webp" alt="">
+                    </a>
+                    </div>
+                    
+
+                    <div class="swiper-slide">
+                      <a href="https://cntoken.io/coin/41264" target="_blank">
+                      <img src="./public/cntoken.webp" alt="">
+                    </a>
+                    </div>
+
+
+                    <div class="swiper-slide">
+                      <a href="https://coinboom.net/coin/cake-panda" target="_blank">
+                      <img src="./public/coinboom.webp" alt="">
+                    </a>
+                    </div>
+                  
+
+                    <div class="swiper-slide">
+
+                      <a target="_blank" href="https://coinmarketcap.com/currencies/cake-panda/">
+                      <img src="./public/coinmarketcap.png" alt="">
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a target="_blank" href="https://www.livecoinwatch.com/price/CakePanda-CAPA">
+                      <img src="./public/livecoinwatch.png" alt="">
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a target="_blank" href="https://coinspotter.io/coins/cake-panda">
+                      <img src="./public/CoinsPotter.png" alt="">
+                    </a>
+                    </div>
+
+               
+
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+      
   </section>
 
 
+<!-- 
 
-
-    <!-- <section class="stats-section por text-center bg-theme spacer" style="margin-top: -5px;">
+    <section class=" por text-center bg-white spacer" style="background: #fff;">
 
      
-      <div class="container">
-        <h2 class="text-white the-title">
-          WHY PANDA?
+      <div class="container index1">
+      
+        <h2 class="text-white the-title mb-4">
+          Teams
         </h2>
         
-        <div class="flex-box" style="align-items: center;">
-          <div class="flex-col">
-            <ul class="whylist">
+        <div class="flex-box " style="align-items: center;">
+          
+            <ul class="teams-list">
               <li class="">
-                We are DEFI
+                <img src="./public/PANDA/one.jpg" alt="">
+                <h4>Md Aquil</h4>
+                <p>UI-UX Designer</p>
               </li>
-              <li>
-                We are DEFI
+              <li class="">
+                <img src="./public/PANDA/two.jpg" alt="">
+                <h4>Md Aquil</h4>
+                <p>UI-UX Designer</p>
               </li>
-              <li>
-                We are DEFI
+              <li class="">
+                <img src="./public/PANDA/three.jpg" alt="">
+                <h4>Md Aquil</h4>
+                <p>UI-UX Designer</p>
               </li>
-              <li>
-                We are DEFI
+              <li class="">
+                <img src="./public/PANDA/four.jpg" alt="">
+                <h4>Md Aquil</h4>
+                <p>UI-UX Designer</p>
               </li>
-              <li>
-                We are DEFI
+              <li class="">
+                <img src="./public/PANDA/five.jpg" alt="">
+                <h4>Md Aquil</h4>
+                <p>UI-UX Designer</p>
               </li>
+              
             </ul>
-          </div>
-          <div class="flex-col">
-            <img class="whyimg" src="./public/whypanda.png" alt="">
-          </div>
+          
         </div>
       </div>
-    </section> -->
+    </section>  -->
 
 
 
@@ -1287,6 +1331,9 @@ to eat after searching the kitchen for ages
                   <li><a href="https://mirror.xyz/0xFBC58876AFaa890D667a5e443077D93923202F30" target="_blank">
                     <img src="./public/newm.png" alt="">
                   </a></li>
+                  <li><a href="https://bscscan.com/address/0xe13288c36f5a792d95e1091ba603959d82085b2b" target="_blank">
+                    <img src="./public/bscscan.svg" alt="">
+                  </a></li>
                  
                 </ul>
                
@@ -1303,9 +1350,9 @@ to eat after searching the kitchen for ages
            
              <li><a href="https://cakepanda.gitbook.io/capa/" target="_blank">Whitepaper</a></li>
              <li><a href="https://coinmarketcap.com/currencies/cake-panda" target="_blank">Coinmarketcap</a></li>
-             <li><a href="https://app.cakepanda.io/" target="_blank">Launch App</a></li>
+             <li><a href="https://testnet.cakepanda.io/" target="_blank">Launch App</a></li>
              
-             <li><a href="https://app.cakepanda.io/referral" translate="_blank">Affiliate Programe</a></li>
+             <li><a href="http://testnet.cakepanda.io/affiliation?address=0x40807BAD8acCeA26c92AD6e510A94745BccC3D3f" target="_blank">Affiliate Programe</a></li>
           </ul>
          
         </div>
@@ -1335,6 +1382,8 @@ to eat after searching the kitchen for ages
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z77JJT7MWR"></script>
+<script src="//code.tidio.co/ieww56ismwwgx4ugtntkswbqd5ugtkve.js" async></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

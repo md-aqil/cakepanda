@@ -22,7 +22,7 @@
 
   /* Border radiuses */
   --br-123xl: 142px;
-  --br-110xl-5: 129.5px;
+  --br-110xl-5: 30px;
 }
 .img-box-child {
     position: relative;
@@ -36,6 +36,7 @@
     border-radius: var(--br-110xl-5);
     width: 100%;
     height: 100%;
+    transform: scale(1.1);
     object-fit: cover;
   }
   .img-box {
