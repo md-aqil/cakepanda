@@ -275,7 +275,7 @@
             position: absolute;
             bottom: -570px; margin-left: -200px;
            " >
-              <source src="./public/g1.webm" type="video/mp4">
+              <source src="./public/g1.webm" type="video/webm">
               Your browser does not support the video tag.
             </video>
 
@@ -1088,48 +1088,29 @@ to eat after searching the kitchen for ages
                  
                  
 
-                  <div class="main">
-                    <div class="actionRowsWrap">
-                      <div class="actionRow">
-                        <label>
-                          AvatarID
-                          <input id="avatarID" type="text" />
-                        </label>
-              
-                        <label>
-                          VoiceID
-                          <input id="voiceID" type="text" />
-                        </label>
-              
-                        <button id="newBtn">New</button>
-                        <button id="startBtn">Start</button>
-                        <button id="closeBtn">Close</button>
-                      </div>
-              
-                      <div class="actionRow" style="display: none;">
-                        <label>
-                          Message
-                          <input id="taskInput" type="text" />
-                        </label>
-                        <button id="repeatBtn">Repeat</button>
-                        <button id="talkBtn">Talk</button>
-              
-                      </div>
+                  <div class="main" style=" flex-direction: row;
+                  gap: 50px;
+                  align-items: center;">
+
+                    <div style="width: 60%;">
+ 
+                      <h4 class="talk-heading">Which CAPA transactions are eligible for 6% tax?</h4>
+                      <p class="talk-data">All the transactions of CAPA tokens done by users like buy, sell or transfer actions, are eligible for 6% fixed tax. This tax is in fact used for the welfare of CAPA token holders, to reward them multifold.</p>
+                    
+                      <!-- Add more pairs of <h4> and <p> elements as needed -->
+                      <h4 class="talk-heading">How is paying 6% tax beneficial for the holders?</h4>
+                      <p class="talk-data">
+                        The collected tax is thoughtfully divided into three equal segments, each serving a distinct purpose. One-third is directed towards token burning, increasing scarcity and intrinsic value. Another third is converted into $CAKE tokens, forming a rewarding pool for loyal CAPA token holders. The final third is allocated to the CAPA Treasury for essential activities such as liquidity boosts and strategic marketing initiatives.  
+                      </p>
+                      
+                
                     </div>
-              
-              
-                    <p id="status"></p>
-                    <h4 class="talk-heading">Which CAPA transactions are eligible for 6% tax?</h4>
-                    <p class="talk-data">All the transactions of CAPA tokens done by users like buy, sell or transfer actions, are eligible for 6% fixed tax. This tax is in fact used for the welfare of CAPA token holders, to reward them multifold.</p>
-                  
-                    <!-- Add more pairs of <h4> and <p> elements as needed -->
-                    <h4 class="talk-heading">Another question heading</h4>
-                    <p class="talk-data">Corresponding answer to the question.</p>
-                    
-              
-                    
-                  
-              
+
+                    <div style="width: 40%;
+    color: #fff;
+    text-align: center;">
+
+                      
                     <div class="videoSectionWrap">
                       <div class="videoWrap">
                         <video id="mediaElement" class="videoEle show" autoplay></video>
@@ -1155,6 +1136,46 @@ to eat after searching the kitchen for ages
                         </label>
                       </div>
                     </div>
+
+                      <div class="actionRowsWrap">
+                        <div class="actionRow">
+                          <label>
+                            AvatarID
+                            <input id="avatarID" type="text" />
+                          </label>
+                
+                          <label>
+                            VoiceID
+                            <input id="voiceID" type="text" />
+                          </label>
+                          <div>
+                            <button id="newBtn">New</button>
+                            <button id="startBtn">Start</button>
+                            <button id="closeBtn">Close</button>
+                          </div>
+                         
+                        </div>
+                
+                        <div class="actionRow" style="display: none;">
+                          <label>
+                            Message
+                            <input id="taskInput" type="text" />
+                          </label>
+                          <button id="repeatBtn">Repeat</button>
+                          <button id="talkBtn">Talk</button>
+                
+                        </div>
+                      </div>
+                
+                
+                      <p id="status"></p>
+  
+  
+                    </div>
+                 
+                    
+                  
+              
                   </div>
               
                  

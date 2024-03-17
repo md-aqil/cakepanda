@@ -126,8 +126,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const talkHeadings = document.querySelectorAll('.talk-heading');
 
+
   talkHeadings.forEach(talkHeading => {
     talkHeading.addEventListener('click', async function() {
+
+      talkHeadings.forEach(element => {
+        element.classList.remove('talkactive');
+      });
+
+          talkHeading.classList.add('talkactive');
+
+
       const talkData = talkHeading.nextElementSibling;
       const dataText = talkData.textContent.trim();
       

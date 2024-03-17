@@ -200,22 +200,53 @@ input:checked + .slider:before {
 
 .talk-heading {
 
-  margin: 30px 0;
-    padding: 25px 4px;
+    padding: 25px 20px;
     margin: 0px auto 15px;
     text-align: left;
-    border-bottom: 1px solid #dfca16b5;
+    border: 1px solid transparent;
     font-family: var(--font-bai-jamjuree);
 
     position: relative;
     cursor: pointer;
     font-size: 24px;
     font-weight: 400;
-    margin: 0;
+    margin: 10px;
     color: #f1f1f1;
 
+    transition: all .3s;
+
+}
+
+#newBtn {
+  margin-left:60px;
 }
 
 .talk-data {
   display:none;
+}
+
+#status {
+  visibility: hidden;
+  height: 0;
+}
+
+.actionRow {
+  align-items:center;
+  justify-content:center;
+
+}
+
+input {
+  width: 100px;
+}
+
+.talk-heading.talkactive {
+  color:#285028;
+  border-radius: 8px;
+    background: linear-gradient(180deg, #FFE925 0%, #B2A000 100%);
+    font-weight:bold;
+}
+.talk-heading:hover {
+  
+  border-color:#ffe925a1;
 }
