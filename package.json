@@ -1,15 +1,16 @@
 {
-  "name": "cake",
+  "name": "streamingavatar",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "start": "parcel ./*.html ",
-    "build": "parcel build ./*.html  --dist-dir ./build"
-  },
+  "description": "## Pre-Requisites",
+  "main": "index.js",
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3",
+    "openai": "^4.28.0"
+  },
   "devDependencies": {
-    "@wixc3/react-board": "^2.3.0",
-    "parcel": "^2.7.0"
+    "prettier": "^3.2.4"
   }
 }

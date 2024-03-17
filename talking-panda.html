@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="./favicon.ico" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="actionRowsWrap">
+        <div class="actionRow">
+         
+          <button id="newBtn">New</button>
+          <button id="startBtn">Start</button>
+          <button id="closeBtn">Close</button>
+        </div>
+
+      </div>
+
+      <p id="status"></p>
+      <h4 class="talk-heading">Which CAPA transactions are eligible for 6% tax?</h4>
+      <p class="talk-data">All the transactions of CAPA tokens done by users like buy, sell or transfer actions, are eligible for 6% fixed tax. This tax is in fact used for the welfare of CAPA token holders, to reward them multifold.</p>
+    
+      <!-- Add more pairs of <h4> and <p> elements as needed -->
+      <h4 class="talk-heading">Another question heading</h4>
+      <p class="talk-data">Corresponding answer to the question.</p>
+      
+      <div class="videoSectionWrap">
+        <div class="videoWrap">
+          <video id="mediaElement" class="videoEle show" autoplay></video>
+          <canvas id="canvasElement" class="videoEle hide"></canvas>
+        </div>
+
+        <div class="actionRow switchRow hide" id="bgCheckboxWrap">
+          <div class="switchWrap">
+            <span>Remove background</span>
+            <label class="switch">
+              <input type="checkbox" id="removeBGCheckbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <label>
+            Background (CSS)
+            <input
+              type="text"
+              id="bgInput"
+              value='url("https://app.heygen.com/icons/heygen/logo_hori_text_light_bg.svg") center / contain no-repeat'
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
